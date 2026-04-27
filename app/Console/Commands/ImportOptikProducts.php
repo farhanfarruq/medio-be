@@ -111,6 +111,7 @@ class ImportOptikProducts extends Command
         foreach ($data as $index => $item) {
             try {
                 $categoryId = $this->detectCategory($item, $categories);
+                $categoryName = array_search($categoryId, $categories) ?: '';
                 $imagePath  = $this->processImage(
                     $item['image_url'] ?? null,
                     $item['slug'] ?? Str::slug($item['name']),
@@ -176,8 +177,8 @@ class ImportOptikProducts extends Command
                     'sku'                      => $sku,
                     'description'              => $this->generateDescription($item),
                     'brand'                    => $item['brand'] ?? null,
-                    'price'                    => (Str::contains($categoryName, 'Lensa Kacamata') && ($item['price_final'] ?? 0) <= 0) ? 100000 : ($item['price_final'] ?? $item['price_original'] ?? 0),
-                    'stock'                    => Str::contains($categoryName, 'Lensa Kacamata') ? 999 : $stock,
+                    'price'                    => (Str::contains($categoryName, 'lensa-kacamata') && ($item['price_final'] ?? 0) <= 0) ? 100000 : ($item['price_final'] ?? $item['price_original'] ?? 0),
+                    'stock'                    => Str::contains($categoryName, 'lensa-kacamata') ? 999 : $stock,
                     'weight'                   => 200, // ~200 gram termasuk kemasan
                     'dimensions'               => null,
                     'variants'                 => null,
