@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\AppSetting;
 use App\Models\Discount;
+use App\Models\Product;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -46,9 +47,15 @@ class DatabaseSeeder extends Seeder
             'loyalty_points' => 1500,
         ]);
 
+        // 5. Auto Import Products if empty
+        if (Product::count() === 0) {
+            $this->command->info('📦 Database produk kosong, memulai import otomatis...');
+            $this->command->call('import:optik-products', [
+                '--skip-truncate' => true,
+            ]);
+        }
+
         $this->command->info('✅ Seeder selesai: Settings, Discounts, dan Users berhasil dibuat.');
         $this->command->info('');
-        $this->command->info('📦 Untuk import produk, jalankan:');
-        $this->command->info('   php artisan import:optik-products');
     }
 }
