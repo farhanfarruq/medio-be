@@ -48,14 +48,32 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // 5. Auto Import Products if empty
-        if (Product::count() === 0) {
-            $this->command->info('📦 Database produk kosong, memulai import otomatis...');
-            $this->command->call('import:optik-products', [
-                '--skip-truncate' => true,
-            ]);
+        $productCount = Product::count();
+        $this->command->info("📊 Jumlah produk terdeteksi: {$productCount}");
+
+        if ($productCount === 0) {
+            $this->command->warn('⚠️  Database produk kosong! Memulai import otomatis...');
+            
+            // Cek keberadaan file JSON utama sebelum memanggil command
+            if (!file_exists(base_path('data_optik_lengkap.json'))) {
+                $this->command->error('❌ Gagal: File data_optik_lengkap.json tidak ditemukan di root project!');
+                $this->command->warn('   Pastikan file tersebut sudah di-push ke repository.');
+            } else {
+                $result = $this->command->call('import:optik-products', [
+                    '--skip-truncate' => true,
+                ]);
+
+                if ($result === 0) {
+                    $this->command->info('✅ Import produk berhasil dijalankan.');
+                } else {
+                    $this->command->error('❌ Command import mengembalikan error.');
+                }
+            }
+        } else {
+            $this->command->info('✅ Produk sudah ada di database, melewati import otomatis.');
         }
 
-        $this->command->info('✅ Seeder selesai: Settings, Discounts, dan Users berhasil dibuat.');
+        $this->command->info('✅ Seeder selesai: Settings, Discounts, dan Users berhasil diproses.');
         $this->command->info('');
     }
 }
