@@ -1,0 +1,315 @@
+[
+    {
+        "id": 253404,
+        "name": "C NLMR GY PLANO",
+        "slug": "c-nlmr-gy-plano",
+        "sku": "C NLMR GY PLANO",
+        "brand": "Newlook Charm",
+        "price_original": 85000,
+        "price_final": 85000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/NEWLOOK_CHARM_Color_HEMA_Three_Monthly_433000082100-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "Gray",
+            "Three Monthly",
+            "Colour"
+        ],
+        "stock_status": {
+            "raya": 1694,
+            "gudang": 2252
+        }
+    },
+    {
+        "id": 253274,
+        "name": "C NPMR GY PLANO",
+        "slug": "c-npmr-gy-plano",
+        "sku": "C NPMR GY PLANO",
+        "brand": "Newlook Playful",
+        "price_original": 85000,
+        "price_final": 85000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/NEWLOOK_PLAYFUL_Color_HEMA_Three_Monthly_422000082100-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "Gray",
+            "Three Monthly",
+            "Colour"
+        ],
+        "stock_status": {
+            "raya": 1264,
+            "gudang": 1925
+        }
+    },
+    {
+        "id": 544090,
+        "name": "C IR GY PLANO",
+        "slug": "c-ir-gy-plano",
+        "sku": "C IR GY PLANO",
+        "brand": "Illustro Color",
+        "price_original": 190000,
+        "price_final": 190000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/ILLUSTRO_COLOR_Color_HEMA_Monthly_223000065100-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "Gray",
+            "Monthly",
+            "Colour"
+        ],
+        "stock_status": {
+            "raya": 358,
+            "gudang": 974
+        }
+    },
+    {
+        "id": 254490,
+        "name": "C AO -1100",
+        "slug": "c-ao-1100",
+        "sku": "C AO -1100",
+        "brand": "Acuvue Oasys",
+        "price_original": 490000,
+        "price_final": 490000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/ACUVUE_OASYS_Clear_Silicone_Hydrogel_Biweekly_733905645914-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "CLEAR",
+            "Biweekly",
+            "Clear"
+        ],
+        "stock_status": {
+            "raya": 45,
+            "gudang": 374
+        }
+    },
+    {
+        "id": 256163,
+        "name": "C ID -050",
+        "slug": "c-id-050",
+        "sku": "C ID -050",
+        "brand": "Illustro 1-day",
+        "price_original": 610000,
+        "price_final": 610000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/ILLUSTRO_1DAY_Clear_HEMA_Daily_884465081275-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "CLEAR",
+            "Daily",
+            "CLEAR",
+            "Clear"
+        ],
+        "stock_status": {
+            "raya": 36,
+            "gudang": 96
+        }
+    },
+    {
+        "id": 254395,
+        "name": "C AFN VS PLANO",
+        "slug": "c-afn-vs-plano",
+        "sku": "C AFN VS PLANO",
+        "brand": "1-day Acuvue Define",
+        "price_original": 620000,
+        "price_final": 620000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/1DAY_ACUVUE_DEFINE_Color_HEMA_Daily_733905388026-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "Vivid Style",
+            "Daily",
+            "Colour"
+        ],
+        "stock_status": {
+            "raya": 16,
+            "gudang": 809
+        }
+    },
+    {
+        "id": 254607,
+        "name": "C AS 8.5 -1200",
+        "slug": "c-as-85-1200",
+        "sku": "C AS 8.5 -1200",
+        "brand": "1-day Acuvue Oasys",
+        "price_original": 695000,
+        "price_final": 695000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/1DAY_ACUVUE_OASYS_Clear_Silicone_Hydrogel_Daily_733905818448-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "CLEAR",
+            "Daily",
+            "Clear"
+        ],
+        "stock_status": {
+            "raya": 6,
+            "gudang": 154
+        }
+    },
+    {
+        "id": 547419,
+        "name": "C O2 -050",
+        "slug": "c-o2-050",
+        "sku": "C O2 -050",
+        "brand": "Illustro O2",
+        "price_original": 340000,
+        "price_final": 340000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/ILLUSTRO_O2_Clear_Silicone_Hydrogel_Monthly_8809929230312-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "Monthly",
+            "CLEAR",
+            "XXXX",
+            "CLEAR"
+        ],
+        "stock_status": {
+            "raya": 6,
+            "gudang": 75
+        }
+    },
+    {
+        "id": 564625,
+        "name": "C AOC PH -800",
+        "slug": "c-aoc-ph-800",
+        "sku": "C AOC PH -800",
+        "brand": "Air Optix Colors",
+        "price_original": 624000,
+        "price_final": 468000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/AIR_OPTIX_COLORS_Color_Silicone_Hydrogel_Monthly_846566835393-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "N",
+            "Monthly",
+            "HAZL",
+            "PUHZ",
+            "PURE HAZEL"
+        ],
+        "stock_status": {
+            "raya": 4,
+            "gudang": 226
+        }
+    },
+    {
+        "id": 249453,
+        "name": "C IC -050",
+        "slug": "c-ic-050",
+        "sku": "C IC -050",
+        "brand": "Illustro Comfort",
+        "price_original": 205000,
+        "price_final": 205000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/ILLUSTRO_COMFORT_Clear_HEMA_Monthly_10860202-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "CLEAR",
+            "Monthly",
+            "Clear"
+        ],
+        "stock_status": {
+            "raya": 3,
+            "gudang": 59
+        }
+    },
+    {
+        "id": 255098,
+        "name": "C AI -1200",
+        "slug": "c-ai-1200",
+        "sku": "C AI -1200",
+        "brand": "Acuvue Vita",
+        "price_original": 570000,
+        "price_final": 570000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/ACUVUE_VITA_Clear_Silicone_Hydrogel_Monthly_733905993299-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "CLEAR",
+            "Monthly",
+            "Clear"
+        ],
+        "stock_status": {
+            "raya": 3,
+            "gudang": 73
+        }
+    },
+    {
+        "id": 253515,
+        "name": "C FDC -050",
+        "slug": "c-fdc-050",
+        "sku": "C FDC -050",
+        "brand": "Dailies Aquacomfort Plus",
+        "price_original": 469000,
+        "price_final": 375200,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/DAILIES_AQUACOMFORT_PLUS_Clear_HEMA_Daily_630175475855-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "CLEAR",
+            "Daily",
+            "Clear"
+        ],
+        "stock_status": {
+            "raya": 1,
+            "gudang": 61
+        }
+    },
+    {
+        "id": 653414,
+        "name": "C P1 -050",
+        "slug": "c-p1-050",
+        "sku": "C P1 -050",
+        "brand": "Precision1",
+        "price_original": 743000,
+        "price_final": 557250,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/PRECISION1_Clear_Silicone_Hydrogel_Daily_730822254199-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "Daily",
+            "CLEAR"
+        ],
+        "stock_status": {
+            "raya": 8,
+            "gudang": 68
+        }
+    },
+    {
+        "id": 564625,
+        "name": "C AOC PH -800",
+        "slug": "c-aoc-ph-800",
+        "sku": "C AOC PH -800",
+        "brand": "Air Optix Colors",
+        "price_original": 624000,
+        "price_final": 468000,
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/zcls/AIR_OPTIX_COLORS_Color_Silicone_Hydrogel_Monthly_846566835393-thumbnail.png",
+        "is_new": false,
+        "is_bestseller": true,
+        "tags": [
+            "Y",
+            "N",
+            "Monthly",
+            "HAZL",
+            "PUHZ",
+            "PURE HAZEL"
+        ],
+        "stock_status": {
+            "raya": 4,
+            "gudang": 226
+        }
+    }
+]
