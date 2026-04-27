@@ -54,20 +54,37 @@ class DatabaseSeeder extends Seeder
         if ($productCount === 0) {
             $this->command->warn('⚠️  Database produk kosong! Memulai import otomatis...');
             
-            // Cek keberadaan file JSON utama sebelum memanggil command
-            if (!file_exists(base_path('data_optik_lengkap.json'))) {
-                $this->command->error('❌ Gagal: File data_optik_lengkap.json tidak ditemukan di root project!');
-                $this->command->warn('   Pastikan file tersebut sudah di-push ke repository.');
-            } else {
-                $result = $this->command->call('import:optik-products', [
-                    '--skip-truncate' => true,
-                ]);
+            // Daftar file yang akan dicoba diimport
+            $filesToImport = [
+                'data_optik_lengkap.json',
+                'data_lensa_kontak.json',
+                'data_sunglasses.json',
+                'data_semua_merek.json',
+            ];
 
-                if ($result === 0) {
-                    $this->command->info('✅ Import produk berhasil dijalankan.');
-                } else {
-                    $this->command->error('❌ Command import mengembalikan error.');
+            $importedAny = false;
+
+            foreach ($filesToImport as $fileName) {
+                $filePath = base_path($fileName);
+                
+                if (file_exists($filePath)) {
+                    $this->command->info("📂 Mengimport file: {$fileName}...");
+                    $result = $this->command->call('import:optik-products', [
+                        '--file' => $filePath,
+                        '--skip-truncate' => true, // Gunakan skip-truncate agar data dari file sebelumnya tidak terhapus
+                    ]);
+
+                    if ($result === 0) {
+                        $importedAny = true;
+                    }
                 }
+            }
+
+            if (!$importedAny) {
+                $this->command->error('❌ Gagal: Tidak ada file JSON produk yang ditemukan di root project!');
+                $this->command->warn('   Pastikan file data_*.json sudah di-push ke repository.');
+            } else {
+                $this->command->info('✅ Seluruh data produk berhasil diproses.');
             }
         } else {
             $this->command->info('✅ Produk sudah ada di database, melewati import otomatis.');
