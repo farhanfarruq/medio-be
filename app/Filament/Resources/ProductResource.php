@@ -119,24 +119,24 @@ class ProductResource extends Resource
                 Tables\Columns\IconColumn::make('is_prescription_required')->boolean(),
             ])
             ->filters([ Tables\Filters\TrashedFilter::make() ])
-            ->actions([ Tables\Actions\EditAction::make(), Tables\Actions\DeleteAction::make() ])
+            ->actions([ \Filament\Actions\EditAction::make(), \Filament\Actions\DeleteAction::make() ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\BulkAction::make('setAsBestSeller')
+                \Filament\Actions\BulkActionGroup::make([
+                    \Filament\Actions\BulkAction::make('setAsBestSeller')
                         ->label('Set Jadi Best Seller')
                         ->icon('heroicon-o-star')
                         ->color('warning')
                         ->action(fn (\Illuminate\Database\Eloquent\Collection $records) => $records->each->update(['is_best_seller' => true]))
                         ->deselectRecordsAfterCompletion(),
                     
-                    Tables\Actions\BulkAction::make('setPrescriptionRequired')
+                    \Filament\Actions\BulkAction::make('setPrescriptionRequired')
                         ->label('Set Butuh Resep')
                         ->icon('heroicon-o-document-text')
                         ->color('danger')
                         ->action(fn (\Illuminate\Database\Eloquent\Collection $records) => $records->each->update(['is_prescription_required' => true]))
                         ->deselectRecordsAfterCompletion(),
 
-                    Tables\Actions\DeleteBulkAction::make(),
+                    \Filament\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }
