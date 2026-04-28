@@ -156,13 +156,15 @@ class ImportOptikProducts extends Command
                 $name = $item['name'];
                 $sku  = $item['sku'] ?? null;
 
-                // Jika --skip-truncate aktif, kita cek apakah produk ini SUDAH ADA (berdasarkan Nama + SKU)
+                // Jika --skip-truncate aktif, kita cek apakah produk ini SUDAH ADA
                 if ($this->option('skip-truncate')) {
-                    $existing = Product::where('name', $name)
-                        ->where('sku', $sku)
-                        ->exists();
-                    
-                    if ($existing) {
+                    // Cek by SKU (jika ada) atau Name
+                    $existsByData = Product::where(function($q) use ($name, $sku) {
+                        $q->where('name', $name);
+                        if ($sku) $q->orWhere('sku', $sku);
+                    })->exists();
+
+                    if ($existsByData) {
                         $bar->advance();
                         continue;
                     }
@@ -191,13 +193,16 @@ class ImportOptikProducts extends Command
                     'is_prescription_required' => 0,
                     'created_at'               => $now,
                     'updated_at'               => $now,
+                    'deleted_at'               => null,
                 ];
 
                 $successCount++;
 
                 // Flush batch ke DB setiap 100 produk
                 if (count($batchInsert) >= $batchSize) {
-                    DB::table('products')->insert($batchInsert);
+                    DB::table('products')->upsert($batchInsert, ['slug'], [
+                        'category_id', 'name', 'sku', 'description', 'brand', 'price', 'stock', 'weight', 'images', 'tags', 'is_active', 'is_best_seller', 'is_new', 'is_not_for_sale', 'is_prescription_required', 'updated_at', 'deleted_at'
+                    ]);
                     $batchInsert = [];
                 }
             } catch (\Exception $e) {
@@ -211,7 +216,9 @@ class ImportOptikProducts extends Command
 
         // Flush sisa batch
         if (!empty($batchInsert)) {
-            DB::table('products')->insert($batchInsert);
+            DB::table('products')->upsert($batchInsert, ['slug'], [
+                'category_id', 'name', 'sku', 'description', 'brand', 'price', 'stock', 'weight', 'images', 'tags', 'is_active', 'is_best_seller', 'is_new', 'is_not_for_sale', 'is_prescription_required', 'updated_at', 'deleted_at'
+            ]);
         }
 
         $bar->finish();
@@ -308,12 +315,13 @@ class ImportOptikProducts extends Command
 
         $result = [];
         foreach ($categoryList as $slug => $data) {
-            $category = Category::firstOrCreate(
+            $category = Category::withTrashed()->updateOrCreate(
                 ['slug' => $slug],
                 [
                     'name'        => $data['name'],
                     'description' => $data['description'],
                     'is_active'   => true,
+                    'deleted_at'  => null,
                 ]
             );
             $result[$slug] = $category->id;
