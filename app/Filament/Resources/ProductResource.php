@@ -119,7 +119,7 @@ class ProductResource extends Resource
                 Tables\Columns\IconColumn::make('is_prescription_required')->boolean(),
             ])
             ->filters([ Tables\Filters\TrashedFilter::make() ])
-            ->actions([ \Filament\Actions\EditAction::make(), \Filament\Actions\DeleteAction::make() ])
+            ->actions([ Tables\Actions\EditAction::make(), Tables\Actions\DeleteAction::make() ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\BulkAction::make('setAsBestSeller')
