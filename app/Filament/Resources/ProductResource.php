@@ -155,9 +155,6 @@ class ProductResource extends Resource
     public static function getEloquentQuery(): \Illuminate\Database\Eloquent\Builder
     {
         return parent::getEloquentQuery()
-            ->with(['category']) // Eager loading kategori agar tidak lemot saat menampilkan nama kategori di tabel
-            ->withoutGlobalScopes([
-                \Illuminate\Database\Eloquent\SoftDeletingScope::class,
-            ]);
+            ->with(['category']); // Tetap gunakan eager loading untuk kecepatan
     }
 }
