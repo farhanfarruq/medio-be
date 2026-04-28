@@ -1,0 +1,723 @@
+[
+    {
+        "id": 354,
+        "name": "Unknown",
+        "slug": "acuvue",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/acuvue.png",
+        "description": ""
+    },
+    {
+        "id": 383,
+        "name": "Unknown",
+        "slug": "adidas",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/adidas.png",
+        "description": "Adidas adalah nama yang tidak asing bagi para penggiat maupun penikmat berbagai bidang olah raga. Sportbrand asal Jerman ini telah berpengalaman puluhan tahun dalam mencipatakan produk yang mendukung performa para atlit di lapangan. Produk eyewear-nya pun diciptakan dengan konsep yang sama terutama untuk koleksi sport-sunglasses yang sudah menjadi pendukung berbagai atlit kenamaan dunia."
+    },
+    {
+        "id": 384,
+        "name": "Unknown",
+        "slug": "adidas-originals",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/adidasoriginals.png",
+        "description": "Kreativitas, autentisitas, dan inovasi merupakan pilar utama yang mendasari Adidas Originals. Nilai-nilai tersebut diwujudkan dalam setiap model koleksi eyewear-nya, yang hadir melalui perpaduan siluet esensial serta bentuk-bentuk yang lebih berani. Originals Eyewear tampil menonjol dengan karakter yang dinamis dan kontemporer, terasa fresh, penuh energi, dan dirancang khusus untuk generasi dengan kepribadian kuat yang berfokus penuh pada masa depan."
+    },
+    {
+        "id": 1274,
+        "name": "Unknown",
+        "slug": "allsaints",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/ALLSAINTS.png",
+        "description": "AllSaints adalah fashion brand kontemporer dari Inggris yang menyediakan pakaian untuk wanita dan pria serta aksesoris, parfum, dan sepatu. Setiap koleksi didefinisikan oleh sikap rock'n'roll yang tidak hanya tercermin dalam desain tetapi juga oleh orang-orang yang memakainya. AllSaints akan terus membuat pilihan desain abadi yang dibuat dengan indah yang dapat dikenakan dari tahun ke tahun. It?s not a look-it?s a feeling."
+    },
+    {
+        "id": 385,
+        "name": "Unknown",
+        "slug": "amor",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/amor.png",
+        "description": "Sunglasses dengan desain stylish dan harga terjangkau."
+    },
+    {
+        "id": 382,
+        "name": "Unknown",
+        "slug": "andrea",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/andrea.png",
+        "description": "Andrea adalah salah satu house brand Optik Melawai yang memiliki koleksi bingkai kacamata trendy dan berkualitas tapi tetap dengan harga terjangkau."
+    },
+    {
+        "id": 386,
+        "name": "Unknown",
+        "slug": "ania",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/ania.png",
+        "description": "Sunglasses dengan desain stylish dan harga terjangkau."
+    },
+    {
+        "id": 388,
+        "name": "Unknown",
+        "slug": "anna-sui",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/annasui.png",
+        "description": "Salah satu dari desainer berdarah Asia yang sukses menembus industri mode Amerika Serikat atau di kota New York secara spesifik adalah Anna Sui. Eksistensinya juga besar di bisnis beauty and fragrance dengan mengusung konsep dan look yang sama yaitu gaya super feminine, vintage style, dan dark gothic romance. Koleksi kacamata dan sunglasses kembali menambah portfolio dari Anna Sui dan ditujukan untuk para wanita yang ingin tampil cantik dan anggun dalam berbagai aktivitas."
+    },
+    {
+        "id": 374,
+        "name": "Unknown",
+        "slug": "coopervision",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/coopervision.png",
+        "description": "Avaira Vitality\n\nSoftlens Avaira Vitality merupakan lensa kontak Silicon Hydrogel yang mampu meneruskan oksigen yang banyak ke mata sehingga nyaman dipakai setiap hari. Softlens Minus Avaira Vitality ini tersedia untuk koreksi rabun jauh.\n\nIsi/Content: 6 buah (3 pasang)\nUkuran/Power Range: -0.50 s/d -6.00 (Step 0.25), -6.50 s/d -12.00 (Step 0.50) \nModality / jenis pemakaian : pemakaian harian \nMasa pakai : 1 buah untuk 1 bulan \n\nKadar Air/Water Content: 55% \nMaterial : Fanfilcon A 45%\n"
+    },
+    {
+        "id": 1103,
+        "name": "Unknown",
+        "slug": "azzaro",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/azzaro.png",
+        "description": "Glamornya kehidupan socialita dengan pesta gemerlap menjadi inspirasi dari Loris Azzaro saat membuka label atas namanya di tahun 1965. Waktu berlalu dan kini brand dari perancis ini berubah identitas hanya dengan nama Azzaro dan masih menawarkan glamor lifestyle secara modern terutama lewat koleksi fragrance dan juga bingkai kacamata untuk pria dan wanita."
+    },
+    {
+        "id": 390,
+        "name": "Unknown",
+        "slug": "bally",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/bally.png",
+        "description": "Bally merupakan brand busana dan aksesoris asal Swiss yang identik dengan kemewahan yang subtle dan berkelas. Nuansa senada bisa dijumpai pada koleksi bingkai kacamata dan sunglasses-nya yang menampilkan gaya klasik, material berkualitas, dan detail artistik yang khas dari brand ini."
+    },
+    {
+        "id": 395,
+        "name": "Unknown",
+        "slug": "benetton",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/benetton.png",
+        "description": "Warna merupakan ciri khas dari koleksi busana dan eyewear dari Benetton, label busana siap pakai asal Italia yang juga terkenal dengan berbagai gambar iklannya yang ikonik."
+    },
+    {
+        "id": 397,
+        "name": "Unknown",
+        "slug": "bolon",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/bolon.png",
+        "description": "Bolon adalah \"number 1 eyewear brand di Cina\". Salah satu rahasia suksesnya adalah berbagai kacamata dan sunglasses trendy tapi ringan sehingga memberikan kenyamanan pada pemakainya. Bahan berkualitas tinggi seperti acetate dan titanium juga dipakai oleh Bolon pada beberapa koleksinya yang menjangkau pria maupun wanita dengan berbagai selera dan signature style-nya."
+    },
+    {
+        "id": 670,
+        "name": "Unknown",
+        "slug": "boss",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/boss.png",
+        "description": "BOSS merupakan identitas baru dari brand fashion asal Jerman yang biasa dikenal sebagai Hugo Boss. Identitas baru ini mempertegas citra brand ini sebagai brand pakaian dan aksesoris untuk pria, dan juga wanita modern yang ingin tampil prima dan berkelas di setiap aktivitasnya. Seluruh koleksinya termasuk produk eyewear punya desain modern klasik dengan citra mewah yang subtle."
+    },
+    {
+        "id": 1095,
+        "name": "Unknown",
+        "slug": "carolina-herrera",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/carolinaherrera.png",
+        "description": "Carolina Herrera merupakan socialita yang kemudian menjadi perancang busana kenamaan di kota New York. Gaya feminin, mewah, dan anggun yang identik dengan dirinya juga dituangkan pada berbagai busana baik daily wear maupun evening gown. Karyanya  telah dipakai oleh berbagai bangsawan, First Ladies of America, selebritas Hollywood, international socialite, maupun wanita modern yang ingin tampil prima. Brand Carolina Herrera juga telah berkembang menjadi lifestyle brand yang lengkap dengan produk beauty, fragrance, dan yang terkini adalah koleksi eyewear."
+    },
+    {
+        "id": 410,
+        "name": "Unknown",
+        "slug": "carrera",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/carrera.png",
+        "description": "Dengan nama yang diambil dari Carrera Pan Americana, ajang balap mobil yang populer di tahun 50'an, semangat dan tampilan adventurous sangat terasa pada setiap bingkai kacamata dan terutama sunglasses dari brand Carrera."
+    },
+    {
+        "id": 421,
+        "name": "Unknown",
+        "slug": "cartier",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/cartier.png",
+        "description": "Lewat koleksi perhiasan dan jam tangan mewahnya, Cartier telah menjadi simbol kemewahan sejak tahun 1847. Bila dulu client-nya adalah para maharaja, bangsawan, socialita, dan selebritas Hollywood, kini mereka yang muda usia pun telah dirangkul oleh brand ini lewat desain yang lebih modern termasuk yang bisa dijumpai pada koleksi Cartier Eyewear."
+    },
+    {
+        "id": 415,
+        "name": "Unknown",
+        "slug": "charriol",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/CHARRIOL.jpg",
+        "description": "Di antara sekian banyaknya brand mewah dari Swiss adalah Charriol yang didirikan oleh mendiang Philippe Charriol di tahun 1983. Ciri khas utama dari setiap jam tangan, perhiasan, aksesoris, dan juga bingkai kacamata Charriol adalah 'the cables' yang dibuat dengan konsep dan tampilan apik dan artistik."
+    },
+    {
+        "id": 1316,
+        "name": "Unknown",
+        "slug": "chloe",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/Chloe.png",
+        "description": "Chloé Eyewear: Sebuah perayaan feminitas modern yang terinspirasi dari visi kreatif Chemena Kamali. Koleksi ini menghadirkan kembali karakter ringan nan ikonis dari rumah mode Chloé ke dalam deretan kacamata hitam dan bingkai optik pilihan. Temukan detail garis yang lembut, kontur feminin, serta sentuhan gaya vintage dalam setiap desainnya."
+    },
+    {
+        "id": 414,
+        "name": "Unknown",
+        "slug": "chopard",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/chopard.png",
+        "description": "Red carpet events terasa kurang gemerlap tanpa kehadiran selebritas dunia yang mengenakan perhiasan dan jam tangan dari Chopard, brand asal Swiss yang namanya tidak asing di antara penikmat kemewahan sejati. Koleksi eyewear dari brand ini pun tidak kalah menawan karena terinspirasi dari keindahan dan gemerlapnya perhiasan serta tampilan berkelas dari jam tangannya."
+    },
+    {
+        "id": 1265,
+        "name": "Unknown",
+        "slug": "cole-haan",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/COLEHAAN.png",
+        "description": "Temukan yang terbaik dari koleksi Cole Haan."
+    },
+    {
+        "id": 1317,
+        "name": "Unknown",
+        "slug": "columbia",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/Columbia.png",
+        "description": "Columbia telah menciptakan pakaian, sepatu, aksesori, dan peralatan inovatif untuk para pecinta kegiatan outdoor sejak 1938. Columbia menjadi brand global terkemuka dengan menyalurkan passion mereka terhadap alam bebas ke dalam teknologi dan produk berkinerja tinggi yang menjaga orang tetap hangat, sejuk, dan terlindungi sepanjang tahun. Columbia Eyewear tetap setia pada identitas brand dengan menghadirkan produk berkualitas tinggi melalui perpaduan material inovatif dan desain klasik. Gaya yang ditawarkan oleh Columbia adalah klasik, easy-to-wear, nyaman, tahan lama, ringan, namun tetap sangat stylish dan terbuat dari bahan berkualitas terbaik. Columbia adalah perpaduan sempurna antara inspirasi olahraga dan gaya hidup."
+    },
+    {
+        "id": 511,
+        "name": "Unknown",
+        "slug": "johnson-johnson",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/JOHNSON_JOHNSON.png",
+        "description": "johnson"
+    },
+    {
+        "id": 418,
+        "name": "Unknown",
+        "slug": "converse",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/converse.png",
+        "description": "Sepatu Converse All-Star merupakan elemen street style bagi kalangan remaja maupun mereka yang berjiwa muda. Youth spirit dari sepatu yang ikonik ini juga dihadirkan pada koleksi kacamata dan sunglasses Converse yang makin memberikan total look yang sempurna."
+    },
+    {
+        "id": 423,
+        "name": "Unknown",
+        "slug": "cyrano",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/cyrano.png",
+        "description": "Temukan yang terbaik untukmu dari Cyrano."
+    },
+    {
+        "id": 363,
+        "name": "Unknown",
+        "slug": "alcon",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/alcon.png",
+        "description": "DAILIES AQUA COMFORT PLUS\n \nLensa kontak bening harian dari ALCON memberikan kelembaban saat Anda berkedip, memberikan kenyamanan dalam waktu yang lebih lama."
+    },
+    {
+        "id": 537,
+        "name": "Unknown",
+        "slug": "david-beckham",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/davidbeckham.png",
+        "description": "DB Eyewear by David Beckham merupakan buah kerjasama antara selebritas olah raga sekaligus pria paling fashionable di dunia dengan Safilo yang merupakan salah satu produsen eyewear terbesar. David Beckham turut mendesain setiap koleksinya yang terdiri dari bingkai kacamata maupun sunglasses yang banyak mengambil inspirasi dari English style tradition, retro look, dan gaya berkelas serta anggun tapi tetap maskulin. The Talisman yaitu flat-diamond shape motif menjadi detail yang mewah namun subtle di tiap frame maupun sunglasses dari DB Eyewear selain juga inisial DB di sisi dalam tangkai atau digrafir di lensa sunglasses."
+    },
+    {
+        "id": 411,
+        "name": "Unknown",
+        "slug": "dior",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/christiandior.png",
+        "description": "Rumah mode Dior awalnya dibuka untuk kaum wanita yang ingin mencari busana mewah dan aksesoris trendy. Di tahun 2001, mulai diperkenalkan label Dior Homme untuk busana dan aksesoris pria. Label ini kini hanya disebut sebagai Dior dan memiliki koleksi lengkap untuk memunuhi kebutuhan gaya para pria modern yang ingin tampil trendy dan prima."
+    },
+    {
+        "id": 542,
+        "name": "Unknown",
+        "slug": "dkny",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/dkny.png",
+        "description": "DKNY merupakan salah satu brand yang menjadi ikon dari minimalist trend yang menguasai industri fashion sejak pertengahan hingga akhir tahun 90'an. Gaya minimal ini terus dipegang oleh DKNY saat ini karena terbukti masih relevan dan memiliki penggemar tersendiri. Koleksi bingkai kacamata dan sunglasses dari DKNY pun memiliki ciri khas desain yang sama dan tetap terlihat artistik dan spesial."
+    },
+    {
+        "id": 540,
+        "name": "Unknown",
+        "slug": "doraemon",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/doraemon.png",
+        "description": "Doraemon merupakan ikon Jepang yang tentunya sudah tidak asing terutama bagi anak-anak. Karakternya yang ceria dengan warna yang khas dihadirkan pada koleksi kacamata anak Doraemon."
+    },
+    {
+        "id": 1273,
+        "name": "Unknown",
+        "slug": "dunhill",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/DUNHILL.png",
+        "description": "Dunhill merupakan luxury brand asal Inggris yang punya pengalaman lebih dari satu abad dalam memproduksi barang mewah dengan kualitas keterampilan khas yang tidak diragukan lagi. Diawali dari tas dan koper kulit, aksesoris mobil, hingga kini menjadi label untuk busana mewah dan aksesoris serta eyewear khusus untuk pria yang ingin tampil berkelas bak aristokrat."
+    },
+    {
+        "id": 565,
+        "name": "Unknown",
+        "slug": "escada",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/escada.png",
+        "description": "Salah satu primadona dari tahun 90'an, Escada terus mempertahankan eksistensinya menjadi brand yang digemari para wanita anggun dan mencari kemewahan yang modern."
+    },
+    {
+        "id": 1264,
+        "name": "Unknown",
+        "slug": "etro",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/ETRO.png",
+        "description": "Etro merupakan salah satu fashion brand asal Italia yang berdiri sejak tahun 1968. Berawal dari perusahaan yang mendesain kain tekstil, Etro melansir koleksi busana wanita untuk pertama kali di 1991. Paisley motif menjadi ciri khas dari busana brand ini disamping juga motif artistik lainnya yang tertuang juga pada koleksi aksesorisnya dan kini pada koleksi eyewear."
+    },
+    {
+        "id": 568,
+        "name": "Unknown",
+        "slug": "avizor",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/AVIZOR.png",
+        "description": "EverClean is a revolutionary system for cleaning and disinfection of all types o"
+    },
+    {
+        "id": 582,
+        "name": "Unknown",
+        "slug": "fendi",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/FENDI.png",
+        "description": "Berawal dari koleksi fur coats dan luxury luggage, Fendi kini berkembang menjadi luxury fashion brand yang identik dengan kemewahan nan modern. Selain IT-hand bags-nya yang digemari fashionista sedunia, Fendi juga punya sederet aksesoris yang super fashion termasuk di dalamnya frame dan sunglasses untuk pria maupun wanita pecinta mode sejati. Koleksi ini juga sarat akan dekorasi mulai dari double F monogram hingga Fendi baguette décor."
+    },
+    {
+        "id": 583,
+        "name": "Unknown",
+        "slug": "ferragamo",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/SALVATOREFERRAGAMO.png",
+        "description": "Berawal dari sepatu cantik untuk para bintang Hollywood, Salvatore Ferragamo berkembang menjadi fashion brand untuk pria maupun wanita yang selalu ingin tampil mewah dan elegan. Turut menjadi kunci suksesnya adalah gancino sang ikon abadi yang muncul di semua koleksinya termasuk pada frame dan sunglasses."
+    },
+    {
+        "id": 602,
+        "name": "Unknown",
+        "slug": "fossil",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/fossil.png",
+        "description": "Brand asal Texas ini berawal pada tahun 1984 dengan permulaan sebagai brand fashion yang menyediakan jam tangan. Kemudian, Fossil melakukan ekspansi ke ranah berbagai aksesoris fashion dan melihat potensi besar pada sunwear hingga menciptakan produk-produk sunglasses yang mengkombinasikan gaya klasik dengan fungsi dari sunglasses itu sendiri."
+    },
+    {
+        "id": 619,
+        "name": "Unknown",
+        "slug": "giordano",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/giordano.png",
+        "description": "Giordano merupakan merek global yang terkenal dengan pakaian kasual dan aksesori yang elegan. Giordano didirikan pada tahun 1981 di Hong Kong oleh Jimmy Lai. Awalnya berfokus pada pakaian kasual, merek ini dengan cepat berkembang dan mendapatkan pengakuan di seluruh dunia berkat desainnya yang sederhana, fungsional, dan berkualitas tinggi. Koleksi kacamata dan sunglasses-nya dengan cepat menjadi best seller berkat perpaduan gaya yang tak lekang oleh waktu, trendy designs, dan kualitas tinggi dengan harga yang ekonomis."
+    },
+    {
+        "id": 665,
+        "name": "Unknown",
+        "slug": "givenchy",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/givenchy.png",
+        "description": "Paris merupakan ibu kota mode dunia yang juga merupakan kota lahirnya brand-brand legendaris termasuk Givenchy yang berdiri sejak tahun 1952. Kemewahan dan keanggunan menjadi ciri khas dari brand ini disamping nuansa edgy yang bisa dijumpai di berbagai koleksi busana, aksesoris, hingga eyewear."
+    },
+    {
+        "id": 662,
+        "name": "Unknown",
+        "slug": "gucci",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/gucci.png",
+        "description": "Sejarah panjang Gucci dimulai pada tahun 1921 di kota Florence, Italia, saat Guccio Gucci mendirikan bisnis pembuatan kopernya. Tahun berlalu dan hingga kini nama Gucci tetap harum dan bahkan menjadi salah satu brand yang kepopulerannya melampaui kalangan industri fashion. Kunci suksesnya tidak lain adalah logo-logonya yang sangat iconic dan mudah dijumpai pada tas, aksesoris, hingga koleksi eyewear."
+    },
+    {
+        "id": 620,
+        "name": "Unknown",
+        "slug": "guess",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/guess.png",
+        "description": "Jeans adalah produk pertama yang ditawarkan oleh Guess di era 80'an dan mereka terus berkembang menjadi sebuah global brand dengan produk lengkap dari pakaian hingga eyewear untuk berbagai generasi termasuk anak-anak. Gaya glamour, sensual image, dan tidak lupa berbagai iconic logonya selalu menjadi ciri khas dari tiap bingkai kacamata dan sunglasses dari Guess."
+    },
+    {
+        "id": 1090,
+        "name": "Unknown",
+        "slug": "guy-laroche",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/guylaroche.png",
+        "description": "Guy Laroche Eyewear menawarkan gaya klasik dari kacamata dan sunglasses namun dikemas dengan gaya modern dan sesuai trend. Kenyamanan dan keanggunan yang sederhana dari konsep awal brand ini juga diterapkan pada desainnya yang menawan tapi tetap fungsional."
+    },
+    {
+        "id": 676,
+        "name": "Unknown",
+        "slug": "hang-ten",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/hangten.png",
+        "description": "Berawal pada tahun 1960 di San Diego, California, USA, Hang Ten adalah merek pakaian yang berpusat pada budaya selancar. Hang Ten Eyewear hadir di Asia pada tahun 2005 dengan desain yang ditujukan untuk anak muda atau eksekutif bisnis yang peduli dengan mode agar lebih pas, serasi dengan warna, tren, dan mengutamakan kualitas."
+    },
+    {
+        "id": 677,
+        "name": "Unknown",
+        "slug": "helen-keller",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/HELENKELLER.png",
+        "description": "Temukan yan terbaik untukmu dari di Helen Keller."
+    },
+    {
+        "id": 668,
+        "name": "Unknown",
+        "slug": "hindar-reading",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/hindarreading.png",
+        "description": "Temukan yang terbaik untukmu di Hindar Reading"
+    },
+    {
+        "id": 680,
+        "name": "Unknown",
+        "slug": "hugo",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/hugo.png",
+        "description": "HUGO merupakan secondary line dari BOSS yang menargetkan koleksinya untuk anak muda. Seperti koleksi busana dan aksesorisnya, HUGO Eyewear menampilkan desain modern minimalist dengan tampilan dinamis. Warna jadi salah satu elemen yang dihadirkan baik untuk sunglasses-nya yang stylish maupun bingkai kacamata yang fungsional dalam berbagai aktivitas."
+    },
+    {
+        "id": 339,
+        "name": "Unknown",
+        "slug": "illustro",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/ILLUSTRO.png",
+        "description": "illustro Comfort\n\nillustro Comfort merupakan lensa kontak hydrogel yang mampu meneruskan oksigen yang cukup ke mata sehingga nyaman untuk digunakan. Dengan perawatan yang tepat, lensa kontak ini bisa disimpan dan digunakan kembali dalam jangka waktu maksimal 1 bulan.\n\nIsi/Content\t\t: 6 buah (3 pasang - dengan besar power yang sama) \nUkuran/Power Range\t: -0.50 s/d -6.00 (Step 0.25), -6.50 s/d -9.00 (Step 0.50) \nModality/Jenis Pemakaian \t: Pemakaian harian \nMasa Pakai \t\t: 1 buah untuk 1 bulan \n\nKadar Air/Water Content\t: 55% \nMaterial \t\t\t: Methafilcon A 45%\n"
+    },
+    {
+        "id": 715,
+        "name": "Unknown",
+        "slug": "jimmy-choo",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/jimmychoo.png",
+        "description": "Well-heeled ladies pasti sudah tidak asing dengan nama Jimmy Choo yang identik dengan sepatu mewah sekaligus nyaman. Karakter glamour yang dipancarkan dari beragam ornamen mulai dari glitter gemerlap hingga kristal juga dimunculkan pada koleksi frame dan sunglasses Jimmy Choo untuk tampilan mewah dalam berbagai aktivitas."
+    },
+    {
+        "id": 729,
+        "name": "Unknown",
+        "slug": "kate-spade",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/katespade.png",
+        "description": "Kate Spade mengawali produknya dengan nylon handbags yang eksklusif dan elegan pada tahun 1993 di New York. Brand ini berkembang dengan pesat hingga memperluas bisnisnya ke berbagai lingkup fashion, termasuk eyewear. Kini, koleksi kacamata yang dimiliki oleh Kate Spade memiliki warna, model, dan motif yang feminin dan modern."
+    },
+    {
+        "id": 735,
+        "name": "Unknown",
+        "slug": "lacoste",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/lacoste.png",
+        "description": "Polo shirt lengan pendek aneka warna dengan sulaman logo satwa buaya warna hijau adalah komoditas andalan dari Lacoste. Produk ini didesain langsung oleh sang pendirinya yaitu René Lacoste di tahun 1933 yang membuat gebrakan dengan memotong lengan panjang dari polo shirt tradisional di masa tersebut. Kini, Lacoste merupakan label pakaian dengan koleksi lengkap dari polo shirt hingga eyewear yang menampilkan chic look khas Perancis."
+    },
+    {
+        "id": 732,
+        "name": "Unknown",
+        "slug": "lanvin",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/LANVIN.jpg",
+        "description": "Brand Lanvin adalah salah satu couture house tertua dari ibu kota mode Paris. Koleksi Lanvin Eyewear menghadirkan keabadian dan presisi melalui keahlian yang luar biasa dengan siluet nostalgia dan sentuhan elegan. Mengacu pada nilai-nilai rumah mode ini, pilihan bingkai kacamata dan sunglass yang ditawarkan oleh brand ini menunjukan sisi mewah, berani, dan edgy, dengan dekorasi logam, warna unik, serta logo ikonik Lanvin."
+    },
+    {
+        "id": 767,
+        "name": "Unknown",
+        "slug": "laura-ashley",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/lauraashley.png",
+        "description": "Kecantikan dan keanggunan busana dan home collection dari brand asal Inggris, Laura Ashley, kini bisa ditemukan pada berbagai bingkai kacamata cantik bergaya klasik  yang sangat pas untuk para wanita elegan."
+    },
+    {
+        "id": 766,
+        "name": "Unknown",
+        "slug": "leonardo",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/leonardo.png",
+        "description": "Kacamata hitam dengan desain stylish dan harga terjangkau."
+    },
+    {
+        "id": 771,
+        "name": "Unknown",
+        "slug": "levis",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/LEVIS.png",
+        "description": "Levi's berdiri pada tahun 1873 dan dikenal sebagai merek denim. Levi's identik dengan gaya dan tampilan timeless. Pada produk kacamatanya, Levi's mengkombinasikan gaya modern classic dan easy-to-wear yang tersedia bagi wanita, pria, hingga anak-anak."
+    },
+    {
+        "id": 1270,
+        "name": "Unknown",
+        "slug": "lindberg",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/lindberg.png",
+        "description": "LINDBERG menghadirkan desain, kenyamanan, dan individualitas terbaik melalui solusi Eyewear yang inovatif. Menawarkan beragam desain elegan, merek ini melambangkan kemewahan bersahaja baik dalam koleksi optik maupun kacamata hitam. Menggunakan material premium seperti titanium, emas, tanduk, kayu, dan berlian, LINDBERG menciptakan bingkai yang ringan tanpa sekrup atau rivet."
+    },
+    {
+        "id": 1306,
+        "name": "Unknown",
+        "slug": "love-moschino",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/MOSCHINOLOVE.png",
+        "description": "Love Moschino adalah sister label dari Moschino yang menampilkan desain busana, aksesoris, serta juga bingkai kacamata yang lebih relaxed, young at heart, fun, dan tentunya easy to wear. Warna dan motif serta tentunya logo brand ini akan mewarnai koleksi frame-nya yang akan menemani hari-hari Anda yang penuh gaya."
+    },
+    {
+        "id": 1302,
+        "name": "Unknown",
+        "slug": "maje",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/MAJE.png",
+        "description": "Maje berhasil mengembangkan koleksi yang luas mulai dari pakaian hingga aksesoris, dan telah berhasil memantapkan sebagai merek terkemuka yang menyediakan kemewahan yang terjangkau. Dibangun berdasarkan potongan-potongan yang mengikuti tren dengan detail dan sentuhan yang halus, brand ini memiliki sentuhan feminin yang bold namun glamour.  Koleksi terbaru Maje menawarkan gaya yang berani dan memastikan estetika tidak harus berhenti pada pakaian.\n"
+    },
+    {
+        "id": 796,
+        "name": "Unknown",
+        "slug": "mango",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/mango.png",
+        "description": "Brand satu ini tentu sudah tidak asing lagi di Indonesia. Berasal dari Barcelona, salah satu pelopor dari konsep fast-fashion ini selalu memberikan sentuhan trendy dan modern pada bentuk-bentuk yang timeless pada koleksi pakaian, aksesoris, hingga bingkai kacamata yang diciptakan."
+    },
+    {
+        "id": 802,
+        "name": "Unknown",
+        "slug": "marc-jacobs",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/marcjacobs.png",
+        "description": "Ikon dari American fashion ini menjadi salah satu fashion brand yang punya banyak penggemar berkat koleksi hand-bag-nya yang selalu jadi must-have item. Marc Jacobs Eyewear dihadirkan untuk melengkapi total look yang stylis dan modern."
+    },
+    {
+        "id": 775,
+        "name": "Unknown",
+        "slug": "marni",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/marni.png",
+        "description": ""
+    },
+    {
+        "id": 803,
+        "name": "Unknown",
+        "slug": "maui-jim",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/MAUIJIM.jpg",
+        "description": "Maui Jim adalah premium polarized sunglasses brand yang berasal dari Pulau Maui di Hawaii. Semua sunglasses dari brand ini memiliki lensa PolarizedPlus2 yang tidak hanya menghilangkan silau akibat pantulan cahaya namun juga memperjelas warna objek yang kita lihat serta yang lebih penting adalah perlindungan 100% terhadap UV A, B, dan C. Diproduksi di Italia atau Jepang, merek ini menawarkan berbagai desain yang cocok untuk pria dan wanita, muda dan tua, serta berbagai bentuk wajah."
+    },
+    {
+        "id": 829,
+        "name": "Unknown",
+        "slug": "max-co",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/max_co.png",
+        "description": "Koleksi MAX&Co. Eyewear menginterpretasikan kembali gaya khas brand ini melalui desain yang fresh, berani, dan penuh karakter. Terinspirasi oleh semangat ?enfant terrible? dari sosok gadis MAX&Co., koleksi besutan Marcolin ini menghadirkan kacamata yang memadukan siluet elegan dengan warna-warna cerah, selaras dengan koleksi pakaiannya. Model-model ini tidak sekadar mengikuti aturan, melainkan menulis ulang aturan tersebut dengan gaya yang unik."
+    },
+    {
+        "id": 807,
+        "name": "Unknown",
+        "slug": "max-mara",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/maxmara.png",
+        "description": "Dalam koleksi Max Mara Eyewear, keanggunan dan inovasi menyatu dalam permainan proporsi yang sempurna. Bentuk geometris, detail metalik, dan warna-warna lembut menginterpretasikan kembali estetika brand satu ini, menerjemahkan visi feminitas kontemporer ke dalam setiap bingkai, soft, berkelas, dan esensial. Setiap pasang kacamata menjadi sebuah kisah tentang keseimbangan dan kecantikan yang abadi."
+    },
+    {
+        "id": 791,
+        "name": "Unknown",
+        "slug": "mcm",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/mcm.png",
+        "description": "Koleksi kacamata MCM senantiasa berpegang pada nilai-nilai dasar brand ini, yang selalu memadukan craftsmanship, desain, dan keberlanjutan dalam setiap kreasinya. Dengan fokus pada sisi yang distruptif, kekuatan utama MCM berpusat pada merevolusi desain klasik melalui material futuristik dan desain yang mengusung semangat Zeitgeist serta Bauhaus. "
+    },
+    {
+        "id": 821,
+        "name": "Unknown",
+        "slug": "mcq",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/mcq.png",
+        "description": "Label sekunder dari Alexander McQueen ini mengkombinasikan street style culture dan fashion sense menjadi sebuah brand busana yang edgy dan ditujukan untuk mereka yang berjiwa muda dan ingin tampil out of the box. Frame dan sunglasses dari McQ pun membawa semangat dan karakter ini namun tetap mengedepankan fungsinya."
+    },
+    {
+        "id": 809,
+        "name": "Unknown",
+        "slug": "menicon",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/MENICON.png",
+        "description": "menicon"
+    },
+    {
+        "id": 778,
+        "name": "Unknown",
+        "slug": "moleskine",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/moleskine.png",
+        "description": "Selain brand fashion mewah, Italia juga memiliki luxury stationery label bernama Moleskine yang sangat terkenal akan note book nya yang eksklusif. Konsep minimalis dari brand ini kini juga bisa dijumpai pada desain kacamata yang bergaya modern dan selalu mengedepankan kenyamanan pemakainya."
+    },
+    {
+        "id": 812,
+        "name": "Unknown",
+        "slug": "molsion",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/molsion.png",
+        "description": "Molsion adalah brand fashion kacamata yang cocok untuk kaum muda, karena dikenal dengan estetika yang berani dan inovatif. Molsion menawarkan berbagai macam bingkai yang cocok untuk berbagai gaya dan kepribadian dengan selalu mengikuti perkembangan tren dan menyisipkan perspektif unik dan trendi pada setiap koleksinya."
+    },
+    {
+        "id": 788,
+        "name": "Unknown",
+        "slug": "montblanc",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/montblanc.png",
+        "description": "Pena mewah dengan lambang white star merupakan komoditas utama dari brand asal Swiss, MontBlanc yang juga telah menjadi salah satu simbol kesuksesan dan prestasi lintas profesi. Koleksi frame dan sunglasses dari brand ini pun tidak kalah mewah dan layak dikenakan oleh pria sukses dalam berbagai aktivitasnya."
+    },
+    {
+        "id": 777,
+        "name": "Unknown",
+        "slug": "moschino",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/moschino.png",
+        "description": "Glamour tapi fun merupakan ciri khas dari Moschino yang terus dipertahankan hingga kini. Karakter tersebut terwujud dalam logo brand dalam ukuran maxi, teddy bear icon, serta rantai dan elemen dekoratif lainnya dalam warna emas yang juga dihadirkan pada koleksi frame dan sunglasses-nya."
+    },
+    {
+        "id": 839,
+        "name": "Unknown",
+        "slug": "nautica",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/nautica.png",
+        "description": "Pada tahun 1983, Nautica mengawali bisnisnya dengan satu visi yang jelas: untuk menciptakan koleksi berkualitas yang terinspirasi dari nautikal. Kini, koleksi kacamata dari Nautica dirancang dengan mengutamakan kenyamanan dan fleksibilitas dengan menyisipkan gaya Amerika klasik, namun dengan desain yang modern dan tetap dengan elemen nautikal."
+    },
+    {
+        "id": 360,
+        "name": "Unknown",
+        "slug": "newlook",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/newlook.png",
+        "description": "Newlook\n\nLensa kontak dengan masa penggunaan 3 Bulan ini memilki pilihan warna yang menarik yang dapat disesuaikan dengan selera maupun warna outift kamu!\nSelain pilihan warna yang beragam, lensa kontak ini affordable dan nyaman untuk digunakan.\nTersedia untuk kamu dengan ukuran/power 0 hingga -8\n\nIsi/Content \t\t: 2 buah (1 pasang - dengan besar power yang sama) \nUkuran/Power Range\t: Plano, -0.50 s/d -4.75 (Step 0.25), -5.00 s/d -8.00 (Step 0.50) \nModality/Jenis Pemakaian \t: Pemakaian harian \nMasa Pakai \t\t: 1 buah untuk 3 bulan \n\nKadar Air/Water Content \t: 43% \nMaterial \t\t\t: Polyhema 57%"
+    },
+    {
+        "id": 846,
+        "name": "Unknown",
+        "slug": "nike",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/nike.png",
+        "description": "Nike adalah brand olahraga nomor satu di dunia yang selalu mendukung performa para atlet di arena pertandingan maupun menjadi brand andalan untuk para pecinta street style and athleisure look. Brand asal Amerika ini punya Nike Vision yang merupakan koleksi bingkai kacamata dan sunglasses yang menampilkan gaya sporty dan ciri khas brand ini termasuk 'swoosh' logonya yang sudah tidak asing lagi."
+    },
+    {
+        "id": 851,
+        "name": "Unknown",
+        "slug": "nine-west",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/ninewest.png",
+        "description": "Temukan kacamata terbaik di NINE WEST."
+    },
+    {
+        "id": 896,
+        "name": "Unknown",
+        "slug": "paul-smith",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/PaulSmith.jpg",
+        "description": "Paul Smith adalah perusahaan desain independen terkemuka asal Inggris. Paul Smith mengusung semangat positivity, curiosity, dan creativity. Koleksi eyewear-nya menampilkan frame kacamata optik dan sunglasses dengan sentuhan unik pada siluet klasik, dibalut bentuk yang berani dan warna-warna trendi, dilengkapi dengan detail stripe ikonik dari brand satu ini serta tanda tangan Paul Smith yang khas."
+    },
+    {
+        "id": 882,
+        "name": "Unknown",
+        "slug": "polar",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/polar.png",
+        "description": "Penuh kreativitas, keberanian, semangat dan energi. Polar menggunakan bahan-bahan dari koleksi kacamata hitam Technicolor baru yang menarik yang diluncurkan oleh Revert dari Belluno: koleksi muda dan berkilau untuk kepribadian kuat yang suka merasakan emosi yang kuat."
+    },
+    {
+        "id": 879,
+        "name": "Unknown",
+        "slug": "polaroid",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/polaroid.png",
+        "description": "Polaroid Eyewear merupakan pelopor dari polarized sunglasses karena salah satu pendirinya adalah Edwin H. Land, ilmuwan Amerika Serikat yang menemukan polarizing filter yang digunakan pada lensa polarized. Kini Polaroid Eyewear terus berinovasi dengan berbagai konsep desain pada polarized sunglasses maupun juga bingkai kacamata yang sesuai dengan trend maupun selera orang dewasa, remaja, hingga anak-anak."
+    },
+    {
+        "id": 890,
+        "name": "Unknown",
+        "slug": "pomona",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/pomona.png",
+        "description": "Kacamata hitam dengan desain stylish dan harga terjangkau."
+    },
+    {
+        "id": 876,
+        "name": "Unknown",
+        "slug": "porsche-design",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/porschedesign.png",
+        "description": "Porsche Design merupakan lifestyle brand dari luxury car brand, Porsche. Didirikan oleh Ferdinand Alexander Porsche pada tahun 1972, brand ini selalu menampilkan koleksi yang sleek dan minimalis serta selalu mengedepankan sisi fungsi. Hal ini juga diterapkan pada desain frame dan sunglasses-nya yang diperuntukkan oleh pria modern dengan segala aktivitas dinamis."
+    },
+    {
+        "id": 893,
+        "name": "Unknown",
+        "slug": "prairie",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/prairie.png",
+        "description": "Kacamata hitam dengan desain stylish dan harga terjangkau."
+    },
+    {
+        "id": 1148,
+        "name": "Unknown",
+        "slug": "prive-revaux",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/priverevaux.png",
+        "description": "Privé Revaux adalah merek kacamata yang berfokus pada menghadirkan kombinasi unik antara gaya yang terinspirasi selebriti, kualitas tinggi, dan harga terjangkau. Lahir di Miami, Privé memiliki pandangan bahwa kualitas desainer tidak harus eksklusif atau elit. Privé mengguncang industri kacamata dan membuktikan bahwa kebebasan bergaya dengan sepasang kacamata tahan lama dan modis dapat dijangkau oleh semua orang."
+    },
+    {
+        "id": 875,
+        "name": "Unknown",
+        "slug": "pull-bear",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/pull_bear.png",
+        "description": "Pull&Bear adalah salah satu fast fashion brand yang mengadirkan busana dan aksesoris trendy dengan harga yang bersahabat. Brand yang berjiwa muda ini juga memiliki koleksi eyewear stylish untuk berbagai kesempatan"
+    },
+    {
+        "id": 900,
+        "name": "Unknown",
+        "slug": "puma",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/puma.png",
+        "description": "Ditemukan oleh Rudolph Dassler pada tahun 1948, brand satu ini menjadi salah satu yang masih bertahan hingga kini. Mengawali produk dengan berbagai sportswear, PUMA juga menciptakan produk kacamatanya dengan beraneka frame untuk tampilan dan kegunaan yang selaras aktivitas olahraga."
+    },
+    {
+        "id": 1153,
+        "name": "Unknown",
+        "slug": "qina",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/qina.png",
+        "description": "QINA: Di mana fashion bertemu fungsi dengan tujuan. QINA lebih dari sekadar brand kacamata, ini adalah refleksi dari sikap generasi baru terhadap gaya, ekspresi diri, dan aksesibilitas. Diposisikan di garis depan fashion, desain, dan keahlian, QINA menghadirkan kacamata berkualitas tinggi dan trendi yang beresonansi dengan keberanian dan semangat generasi muda yang terus berkembang saat ini. Dengan menggunakan material premium seperti asetat bermutu tinggi dan titanium ultra-ringan untuk memastikan setiap bagiannya, QINA menawarkan kenyamanan, ketahanan, dan daya tarik yang menonjol."
+    },
+    {
+        "id": 929,
+        "name": "Unknown",
+        "slug": "rocco-by-rodenstock",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/roccobyrodenstock.png",
+        "description": "Untuk kalangan muda usia maupun pecinta desain yang artistik, Rodenstock menghadirkan lini Rocco by Rodenstock yang juga tetap membawa standard kualitas tinggi yang dimiliki oleh produsen lensa asal Jerman ini."
+    },
+    {
+        "id": 906,
+        "name": "Unknown",
+        "slug": "rodenstock",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/rodenstock.png",
+        "description": "Selain unggul dalam memproduksi lensa berkualitas tinggi, Rodenstock juga memiliki koleksi frame dan sunglasses dalam kualitas yang sepadan. Desain klasik menjadikan koleksinya memiliki daya pakai tinggi sekaligus tahan terhadap perputaran trend fashion."
+    },
+    {
+        "id": 1053,
+        "name": "Unknown",
+        "slug": "saint-laurent",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/SAINTLAURENT.png",
+        "description": "Paris adalah ibu kota mode yang banyak melahirkan berbagai brand dan desainer ternama yang salah satunya adalah Yves Saint Laurent atau kini dikenal sebagai Saint Laurent. Chic Parisian style selalu ditampilkan oleh brand ini siapapun creative director-nya dan apapun produknya termasuk koleksi eyewear yang menjadi favorit para selebriti muda dunia seperti Rosé dari Blackpink dan Hailey Bieber."
+    },
+    {
+        "id": 969,
+        "name": "Unknown",
+        "slug": "sandy",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/sandy.png",
+        "description": "Kacamata hitam dengan desain stylish dan harga terjangkau."
+    },
+    {
+        "id": 828,
+        "name": "Unknown",
+        "slug": "sight-stationfoster-grant",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/sightstation.png",
+        "description": ""
+    },
+    {
+        "id": 958,
+        "name": "Unknown",
+        "slug": "silhouette",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/silhouette.png",
+        "description": "Didirikan pada tahun 1964, Silhouette adalah pemimpin global dalam kacamata rimless premium. Pada tahun 1999, brand yang hanya memproduksi eyewear ini merevolusi industri kacamata dengan model inovatif tanpa sekrup, engsel, dan bingkai yang disebut Titan Minimal Art. Desain inovatif ini, dibuat sepenuhnya di Austria dan hanya seberat 1,8 gram, sangat unik dan belum pernah ada sebelumnya. Silhouette hanya menggunakan bahan high-tech titanium dan plastik SPX yang dikembangkan oleh brand ini untuk menjamin kualitas tinggi serta ringan dan nyamannya kacamata serta sunglasses yang menjadi idealisme utamanya."
+    },
+    {
+        "id": 957,
+        "name": "Unknown",
+        "slug": "skechers",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/skechers.png",
+        "description": "Berasal dari California Selatan, Skechers adalah perusahaan sepatu serta aksesoris yang berkaitan dengan gaya hidup atletik terbesar ketiga di dunia. Kemudian, brand satu ini juga menjajaki dunia kacamata. Koleksi Skechers eyewear dan sunwear menawarkan berbagai model unik dan ekspresif untuk dewasa dan anak-anak dengan tampilan dan warna ikonik yang khas dengan Skechers. Brand ini juga memiliki ciri khas, seperti frame dan pola yang mencolok, warna-warna cerah, dan detail metal ikonik berlogo \"S\" pada bagian dalam tangkai kacamata."
+    },
+    {
+        "id": 348,
+        "name": "Unknown",
+        "slug": "bausch-lomb",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/BAUSCH_LOMB.png",
+        "description": "produk BAUSCH & LOMB"
+    },
+    {
+        "id": 989,
+        "name": "Unknown",
+        "slug": "swarovski",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/swarovski.png",
+        "description": "Kemilau kristal Swarovski yang seindah berlian hadir juga dalam koleksi kacamata"
+    },
+    {
+        "id": 998,
+        "name": "Unknown",
+        "slug": "ted-baker",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/tedbaker.png",
+        "description": "Mengawali bisnis dengan spesialisasi t-shirt, Ted Baker memulai bisnisnya di Glasglow, Inggris. Ted Baker menjadi pilihan bagi pria untuk beberapa koleksi t-shirt kontemporer terbaik. Sejak awal, kualitas, detail, dan perpaduan selera humor yang unik menjadi fokus dari brand ini, hingga saat mengeluarkan produk kacamatanya, Ted Baker memadukan gaya retro dengan kontemporer yang unik bagi penggemar brand ini."
+    },
+    {
+        "id": 1269,
+        "name": "Unknown",
+        "slug": "timberland",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/TIMBERLAND.png",
+        "description": "Serbaguna dan inovatif, koleksi kacamata Timberland mewujudkan nilai-nilai dari lifestyle brand ikonik ini sekaligus merayakan warisannya. Sejalan dengan semangat keberlanjutan yang menjadi jantung utama dari Timberland, rangkaian koleksi ini mencakup model-model yang dibuat dengan setidaknya 35% material plastik berbasis bio (bio-based), sehingga dikategorikan ke dalam lini Earthkeepers. \n\nKacamata hitam dan bingkai optiknya menampilkan desain kontemporer yang mencuri perhatian, hasil dari riset berkelanjutan brand ini, tidak hanya pada pemilihan warna, tetapi juga penggunaan material ramah lingkungan. Detail yang canggih serta lensa terpolarisasi eksklusif menyempurnakan tampilan sekaligus meningkatkan performa pada setiap modelnya. "
+    },
+    {
+        "id": 1004,
+        "name": "Unknown",
+        "slug": "melawai",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/MELAWAI.png",
+        "description": "Tissue pembersih untuk kacamata produk housebrand dari Optik Melawai"
+    },
+    {
+        "id": 1001,
+        "name": "Unknown",
+        "slug": "tommy-hilfiger",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/tommyhilfiger.png",
+        "description": "Tommy Hilfiger merupakan salah satu brand dan desainer legendaris dari Amerika Serikat dan terkhusus dari kota New York. Mengawali bisnisnya dari berjualan denim, Tommy mengembangkan brand-nya dengan koleksi bergaya preppy yang dengan cepat digemari oleh remaja di Amerika hingga seluruh dunia. Koleksi eyewear-nya juga menawarkan gaya yang serupa serta juga koleksi yang sporty untuk memenuhi selera penggemarnya yang terus berkembang."
+    },
+    {
+        "id": 1014,
+        "name": "Unknown",
+        "slug": "under-armour",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/underarmour.png",
+        "description": "Kacamata Under Armour dirancang untuk atlet dan individu aktif, dengan fokus pada daya tahan, kenyamanan, dan kinerja. Mereka sering menampilkan bingkai ringan, lensa tahan benturan, dan teknologi lain untuk meningkatkan kejernihan visual dan melindungi mata selama berbagai aktivitas."
+    },
+    {
+        "id": 1021,
+        "name": "Unknown",
+        "slug": "vertis",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/vertis.png",
+        "description": "Untuk koleksi eyewear,Vertis menampilkan beragam desain baik vintage, klasik, serta gaya eksentrik yang dikemas dalam material acetate dan metal terbaik.\n"
+    },
+    {
+        "id": 1343,
+        "name": "Unknown",
+        "slug": "victoria-beckham",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/VictoriaBeckham.png",
+        "description": "Victoria Beckham eyewear menampilkan desain bingkai asetat yang sculptural dan lensa gradasi, dibuat secara presisi di Italia. Hadir sebagai bentuk modern dari desain klasik, koleksi brand satu ini mencakup berbagai gaya, mulai dari siluet aviator yang tajam hingga desain oversized yang elegan."
+    },
+    {
+        "id": 1157,
+        "name": "Unknown",
+        "slug": "vintage",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/VINTAGE.png",
+        "description": "Vintage Collection adalah produk kacamata dan sunglasses dari berbagai brand yang diluncurkan antara tahun 1980-an hingga awal 2000-an. Desainnya unik dengan berbagai detail yang belum tentu ada pada koleksi masa kini. Seluruh koleksi ini merupakan \"new old stock,\" atau kondisinya masih baru dan belum pernah dipakai."
+    },
+    {
+        "id": 1254,
+        "name": "Unknown",
+        "slug": "vivienne-westwood",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/VIVIENNEWESTWOOD.png",
+        "description": "Vivienne Westwood, ikon sejati high fashion Inggris, memulai desain pada tahun 1971 di London. Koleksi Vivienne Westwood mengambil inspirasi dari bingkai kacamata sebagai teater - melampaui bentuk & fungsi, sebuah ekspresi gaya. Koleksi yang beragam ini menampilkan catatan desain utama dari rumah mode tersebut, mewujudkan referensi dari masa lalu, dipadukan dengan pendekatan anarkis terhadap desain yang telah menjadi ciri khas Westwood."
+    },
+    {
+        "id": 571,
+        "name": "Unknown",
+        "slug": "zegna",
+        "image_url": "https://d2por3kqx2ddk1.cloudfront.net/brand/ermenegildozegna.png",
+        "description": "Zegna merupakan satu dari sedikit label busana yang memfokuskan diri pada konsumen pria sehingga semua koleksi busana hingga eyewear yang dihasilkan menjadi sempurna dan semakin memancarkan gaya dan kharisma pemakainya."
+    }
+]
