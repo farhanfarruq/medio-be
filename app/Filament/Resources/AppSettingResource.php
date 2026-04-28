@@ -5,21 +5,21 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\AppSettingResource\Pages;
 use App\Models\AppSetting;
 use Filament\Forms;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 
 class AppSettingResource extends Resource
 {
-    protected static ?string $model = AppSetting::class;
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-cog-8-tooth';
-    protected static string | \UnitEnum | null $navigationGroup = 'Sistem';
+    protected static ?string \$model = AppSetting::class;
+    protected static string | \BackedEnum | null \$navigationIcon = 'heroicon-o-cog-8-tooth';
+    protected static string | \UnitEnum | null \$navigationGroup = 'Sistem';
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form \$form): Form
     {
-        return $schema
-            ->components([
+        return \$form
+            ->schema([
                 Forms\Components\TextInput::make('key')
                     ->required()
                     ->unique(ignoreRecord: true)

@@ -5,7 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\CategoryResource\Pages;
 use App\Models\Category;
 use Filament\Forms;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -13,14 +13,14 @@ use Illuminate\Support\Str;
 
 class CategoryResource extends Resource
 {
-    protected static ?string $model = Category::class;
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-tag';
-    protected static string | \UnitEnum | null $navigationGroup = 'Produk';
+    protected static ?string \$model = Category::class;
+    protected static string | \BackedEnum | null \$navigationIcon = 'heroicon-o-tag';
+    protected static string | \UnitEnum | null \$navigationGroup = 'Produk';
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form \$form): Form
     {
-        return $schema
-            ->components([
+        return \$form
+            ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255)

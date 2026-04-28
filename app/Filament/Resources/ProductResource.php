@@ -5,7 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\ProductResource\Pages;
 use App\Models\Product;
 use Filament\Forms;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -17,10 +17,10 @@ class ProductResource extends Resource
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-shopping-bag';
     protected static string | \UnitEnum | null $navigationGroup = 'Produk';
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form $form): Form
     {
-        return $schema
-            ->components([
+        return $form
+            ->schema([
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name')
                     ->required(),

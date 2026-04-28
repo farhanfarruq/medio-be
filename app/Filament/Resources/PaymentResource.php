@@ -5,22 +5,22 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\PaymentResource\Pages;
 use App\Models\Payment;
 use Filament\Forms;
-use Filament\Schemas\Schema;
+use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 
 class PaymentResource extends Resource
 {
-    protected static ?string $model = Payment::class;
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-credit-card';
-    protected static string | \UnitEnum | null $navigationGroup = 'Penjualan';
-    protected static ?string $navigationLabel = 'Konfirmasi Bayar';
+    protected static ?string \$model = Payment::class;
+    protected static string | \BackedEnum | null \$navigationIcon = 'heroicon-o-credit-card';
+    protected static string | \UnitEnum | null \$navigationGroup = 'Penjualan';
+    protected static ?string \$navigationLabel = 'Konfirmasi Bayar';
 
-    public static function form(Schema $schema): Schema
+    public static function form(Form \$form): Form
     {
-        return $schema
-            ->components([
+        return \$form
+            ->schema([
                 Forms\Components\TextInput::make('external_id')
                     ->disabled(),
                 Forms\Components\TextInput::make('payment_method')
