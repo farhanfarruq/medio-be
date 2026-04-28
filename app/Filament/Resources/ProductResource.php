@@ -84,20 +84,7 @@ class ProductResource extends Resource
                     ->label('Foto Produk')
                     ->circular()
                     ->stacked()
-                    // Logika untuk menampilkan gambar baik dari storage lokal maupun URL eksternal
-                    ->getImageUrlUsing(function ($state): ?string {
-                        if (empty($state)) return null;
-                        $firstImage = is_array($state) ? ($state[0] ?? null) : $state;
-                        if (!$firstImage) return null;
-                        
-                        // Jika sudah berupa URL lengkap (http/https), kembalikan langsung
-                        if (str_starts_with($firstImage, 'http')) {
-                            return $firstImage;
-                        }
-                        
-                        // Jika path lokal, gunakan URL dari disk public
-                        return \Illuminate\Support\Facades\Storage::disk('public')->url($firstImage);
-                    }),
+                    ->disk('public'),
                 Tables\Columns\TextColumn::make('name')->searchable(),
                 Tables\Columns\TextColumn::make('category.name')->sortable(),
                 Tables\Columns\TextColumn::make('price')->money('IDR')->sortable(),
