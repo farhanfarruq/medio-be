@@ -122,7 +122,25 @@ class ProductResource extends Resource
             ])
             ->filters([ Tables\Filters\TrashedFilter::make() ])
             ->actions([ \Filament\Actions\EditAction::make(), \Filament\Actions\DeleteAction::make() ])
-            ->bulkActions([ \Filament\Actions\BulkActionGroup::make([ \Filament\Actions\DeleteBulkAction::make() ]) ]);
+            ->bulkActions([
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\BulkAction::make('setAsBestSeller')
+                        ->label('Set Jadi Best Seller')
+                        ->icon('heroicon-o-star')
+                        ->color('warning')
+                        ->action(fn (\Illuminate\Database\Eloquent\Collection $records) => $records->each->update(['is_best_seller' => true]))
+                        ->deselectRecordsAfterCompletion(),
+                    
+                    Tables\Actions\BulkAction::make('setPrescriptionRequired')
+                        ->label('Set Butuh Resep')
+                        ->icon('heroicon-o-document-text')
+                        ->color('danger')
+                        ->action(fn (\Illuminate\Database\Eloquent\Collection $records) => $records->each->update(['is_prescription_required' => true]))
+                        ->deselectRecordsAfterCompletion(),
+
+                    Tables\Actions\DeleteBulkAction::make(),
+                ]),
+            ]);
     }
 
     public static function getPages(): array
@@ -132,5 +150,14 @@ class ProductResource extends Resource
             'create' => Pages\CreateProduct::route('/create'),
             'edit' => Pages\EditProduct::route('/{record}/edit'),
         ];
+    }
+
+    public static function getEloquentQuery(): \Illuminate\Database\Eloquent\Builder
+    {
+        return parent::getEloquentQuery()
+            ->with(['category']) // Eager loading kategori agar tidak lemot saat menampilkan nama kategori di tabel
+            ->withoutGlobalScopes([
+                \Illuminate\Database\Eloquent\SoftDeletingScope::class,
+            ]);
     }
 }

@@ -7,7 +7,10 @@ use App\Http\Controllers\API\ProductController;
 use App\Http\Controllers\API\ShippingController;
 use App\Http\Controllers\API\WebhookController;
 use App\Http\Controllers\API\DiscountController;
+use App\Http\Controllers\API\AppSettingController;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/settings', [AppSettingController::class, 'index']);
 
 Route::post('/webhook/xendit', [WebhookController::class, 'xendit']);
 

@@ -14,9 +14,21 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // 1. App Settings
-        AppSetting::firstOrCreate(['key' => 'store_name'],  ['group' => 'general',  'value' => 'Optik Medio Premium', 'type' => 'string']);
-        AppSetting::firstOrCreate(['key' => 'tax_rate'],    ['group' => 'finance',   'value' => '11',                  'type' => 'integer']);
-        AppSetting::firstOrCreate(['key' => 'loyalty_conversion'], ['group' => 'loyalty', 'value' => '100',            'type' => 'integer']);
+        \App\Models\AppSetting::updateOrCreate(['key' => 'store_name'],  ['group' => 'general',  'value' => 'Optik Medio', 'type' => 'string']);
+        \App\Models\AppSetting::updateOrCreate(['key' => 'store_address'], ['group' => 'general', 'value' => 'Pasar, Bandarsari, Kec. Padang Ratu, Kabupaten Lampung Tengah, Lampung 34175', 'type' => 'string']);
+        \App\Models\AppSetting::updateOrCreate(['key' => 'store_phone'], ['group' => 'general', 'value' => '0813-1196-9585', 'type' => 'string']);
+        \App\Models\AppSetting::updateOrCreate(['key' => 'store_opening_hours'], ['group' => 'general', 'value' => 'Buka setiap hari, tutup pukul 20.30', 'type' => 'string']);
+        \App\Models\AppSetting::updateOrCreate(['key' => 'store_location_url'], ['group' => 'general', 'value' => 'https://www.google.com/maps/place/Optik+Medio/@-5.0873184,104.9593006,17z/data=!4m16!1m9!3m8!1s0x2e474dfd0f3db101:0xfdf2736fd871343f!2sOptik+Medio!8m2!3d-5.0873184!4d104.9618755!9m1!1b1!16s%2Fg%2F11tsn13pql!3m5!1s0x2e474dfd0f3db101:0xfdf2736fd871343f!8m2!3d-5.0873184!4d104.9618755!16s%2Fg%2F11tsn13pql?entry=ttu&g_ep=EgoyMDI2MDQyNi4wIKXMDSoASAFQAw%3D%3D', 'type' => 'string']);
+        \App\Models\AppSetting::updateOrCreate(['key' => 'store_testimonials'], [
+            'group' => 'general', 
+            'value' => json_encode([
+                ['name' => 'Ryan Fajar', 'review' => 'Koleksi frame terkini, keren keren..', 'rating' => 5],
+                ['name' => 'Ronaldi Putra', 'review' => 'Optik nya bagus, mewah, pelayanan nya ramah.. Owner nya jujur dan berpengalaman..', 'rating' => 5]
+            ]), 
+            'type' => 'json'
+        ]);
+        \App\Models\AppSetting::updateOrCreate(['key' => 'tax_rate'],    ['group' => 'finance',   'value' => '11',                  'type' => 'integer']);
+        \App\Models\AppSetting::updateOrCreate(['key' => 'loyalty_conversion'], ['group' => 'loyalty', 'value' => '100',            'type' => 'integer']);
 
         // 2. Discounts
         Discount::firstOrCreate(['code' => 'WELCOME2026'], [
