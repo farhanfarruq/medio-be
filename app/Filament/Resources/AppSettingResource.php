@@ -13,8 +13,8 @@ use Filament\Tables\Table;
 class AppSettingResource extends Resource
 {
     protected static ?string $model = AppSetting::class;
-    protected static ?string $navigationIcon = 'heroicon-o-cog-8-tooth';
-    protected static ?string $navigationGroup = 'Sistem';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-cog-8-tooth';
+    protected static string | \UnitEnum | null $navigationGroup = 'Sistem';
 
     public static function form(Form $form): Form
     {
