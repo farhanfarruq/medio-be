@@ -68,7 +68,11 @@ class ProductResource extends Resource
                     ->disk('public')
                     ->visibility('public')
                     ->directory('products')
-                    ->columnSpanFull(),
+                    ->columnSpanFull()
+                    // Mencegah field ini menghapus data di DB jika tidak ada file baru yang diupload
+                    // Terutama berguna jika data lama masih berupa URL eksternal
+                    ->dehydrated(fn ($state) => filled($state))
+                    ->helperText('Jika gambar tidak muncul di sini, itu karena gambar tersebut masih berupa link eksternal. Tenang saja, gambar tidak akan hilang saat Anda menyimpan detail produk lainnya.'),
             ]);
     }
 
@@ -77,9 +81,23 @@ class ProductResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\ImageColumn::make('images')
-                    ->disk('public')
+                    ->label('Foto Produk')
+                    ->circular()
                     ->stacked()
-                    ->circular(),
+                    // Logika untuk menampilkan gambar baik dari storage lokal maupun URL eksternal
+                    ->getImageUrlUsing(function ($state): ?string {
+                        if (empty($state)) return null;
+                        $firstImage = is_array($state) ? ($state[0] ?? null) : $state;
+                        if (!$firstImage) return null;
+                        
+                        // Jika sudah berupa URL lengkap (http/https), kembalikan langsung
+                        if (str_starts_with($firstImage, 'http')) {
+                            return $firstImage;
+                        }
+                        
+                        // Jika path lokal, gunakan URL dari disk public
+                        return \Illuminate\Support\Facades\Storage::disk('public')->url($firstImage);
+                    }),
                 Tables\Columns\TextColumn::make('name')->searchable(),
                 Tables\Columns\TextColumn::make('category.name')->sortable(),
                 Tables\Columns\TextColumn::make('price')->money('IDR')->sortable(),
