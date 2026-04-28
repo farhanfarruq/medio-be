@@ -14,8 +14,8 @@ use Illuminate\Support\Str;
 class ProductResource extends Resource
 {
     protected static ?string $model = Product::class;
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-shopping-bag';
-    protected static string | \UnitEnum | null $navigationGroup = 'Produk';
+    protected static ?string $navigationIcon = 'heroicon-o-shopping-bag';
+    protected static ?string $navigationGroup = 'Produk';
 
     public static function form(Schema $schema): Schema
     {
@@ -105,13 +105,13 @@ class ProductResource extends Resource
     {
         return $table
             ->columns([
-                /* Tables\Columns\ImageColumn::make('images')
+                Tables\Columns\ImageColumn::make('images')
                     ->label('Foto Produk')
                     ->circular()
                     ->stacked()
-                    ->disk('public'), */
+                    ->disk('public'),
                 Tables\Columns\TextColumn::make('name')->searchable(),
-                // Tables\Columns\TextColumn::make('category.name')->sortable(),
+                Tables\Columns\TextColumn::make('category.name')->sortable(),
                 Tables\Columns\TextColumn::make('price')->money('IDR')->sortable(),
                 Tables\Columns\TextColumn::make('stock')->numeric()->sortable(),
                 Tables\Columns\IconColumn::make('is_active')->boolean(),
@@ -119,7 +119,7 @@ class ProductResource extends Resource
                 Tables\Columns\IconColumn::make('is_prescription_required')->boolean(),
             ])
             ->filters([ Tables\Filters\TrashedFilter::make() ])
-            ->actions([ \Filament\Actions\EditAction::make(), \Filament\Actions\DeleteAction::make() ])
+            ->actions([ Tables\Actions\EditAction::make(), Tables\Actions\DeleteAction::make() ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\BulkAction::make('setAsBestSeller')
