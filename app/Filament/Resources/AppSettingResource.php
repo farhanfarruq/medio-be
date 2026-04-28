@@ -44,7 +44,7 @@ class AppSettingResource extends Resource
                 //
             ])
             ->actions([
-                \Filament\Actions\EditAction::make(),
+                Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
                 //
