@@ -96,8 +96,6 @@ class ProductResource extends Resource
                     ->visibility('public')
                     ->directory('products')
                     ->columnSpanFull()
-                    // Mencegah field ini menghapus data di DB jika tidak ada file baru yang diupload
-                    // Terutama berguna jika data lama masih berupa URL eksternal
                     ->dehydrated(fn ($state) => filled($state))
                     ->helperText('Jika gambar tidak muncul di sini, itu karena gambar tersebut masih berupa link eksternal. Tenang saja, gambar tidak akan hilang saat Anda menyimpan detail produk lainnya.'),
             ]);
@@ -151,5 +149,4 @@ class ProductResource extends Resource
             'edit' => Pages\EditProduct::route('/{record}/edit'),
         ];
     }
-
 }
