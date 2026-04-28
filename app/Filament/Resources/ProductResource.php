@@ -62,6 +62,33 @@ class ProductResource extends Resource
                 Forms\Components\Textarea::make('description')
                     ->maxLength(65535)
                     ->columnSpanFull(),
+                Forms\Components\Placeholder::make('current_images_preview')
+                    ->label('Preview Gambar Saat Ini')
+                    ->content(function ($record) {
+                        if (!$record || empty($record->images)) {
+                            return 'Belum ada gambar yang tersimpan.';
+                        }
+                        
+                        $images = is_array($record->images) ? $record->images : json_decode($record->images, true);
+                        if (empty($images)) return 'Belum ada gambar yang tersimpan.';
+
+                        $html = '<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">';
+                        foreach ($images as $image) {
+                            $url = str_starts_with($image, 'http') 
+                                ? $image 
+                                : \Illuminate\Support\Facades\Storage::disk('public')->url($image);
+                            
+                            $html .= "
+                                <div style='position: relative;'>
+                                    <img src='{$url}' style='height: 120px; width: 120px; object-fit: cover; border-radius: 12px; border: 2px solid #eee; box-shadow: 0 2px 4px rgba(0,0,0,0.1);'>
+                                </div>";
+                        }
+                        $html .= '</div>';
+                        
+                        return new \Illuminate\Support\HtmlString($html);
+                    })
+                    ->visible(fn ($record) => $record !== null)
+                    ->columnSpanFull(),
                 Forms\Components\FileUpload::make('images')
                     ->multiple()
                     ->image()
