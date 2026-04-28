@@ -197,9 +197,7 @@ class ImportOptikProducts extends Command
 
                 // Flush batch ke DB setiap 100 produk
                 if (count($batchInsert) >= $batchSize) {
-                    DB::table('products')->upsert($batchInsert, ['slug'], [
-                        'category_id', 'name', 'sku', 'description', 'brand', 'price', 'stock', 'weight', 'images', 'tags', 'is_active', 'is_best_seller', 'is_new', 'is_not_for_sale', 'is_prescription_required', 'updated_at'
-                    ]);
+                    DB::table('products')->insert($batchInsert);
                     $batchInsert = [];
                 }
             } catch (\Exception $e) {
@@ -213,9 +211,7 @@ class ImportOptikProducts extends Command
 
         // Flush sisa batch
         if (!empty($batchInsert)) {
-            DB::table('products')->upsert($batchInsert, ['slug'], [
-                'category_id', 'name', 'sku', 'description', 'brand', 'price', 'stock', 'weight', 'images', 'tags', 'is_active', 'is_best_seller', 'is_new', 'is_not_for_sale', 'is_prescription_required', 'updated_at'
-            ]);
+            DB::table('products')->insert($batchInsert);
         }
 
         $bar->finish();
@@ -312,13 +308,12 @@ class ImportOptikProducts extends Command
 
         $result = [];
         foreach ($categoryList as $slug => $data) {
-            $category = Category::withTrashed()->updateOrCreate(
+            $category = Category::firstOrCreate(
                 ['slug' => $slug],
                 [
                     'name'        => $data['name'],
                     'description' => $data['description'],
                     'is_active'   => true,
-                    'deleted_at'  => null,
                 ]
             );
             $result[$slug] = $category->id;

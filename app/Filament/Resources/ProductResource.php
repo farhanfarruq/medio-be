@@ -14,8 +14,8 @@ use Illuminate\Support\Str;
 class ProductResource extends Resource
 {
     protected static ?string $model = Product::class;
-    protected static ?string $navigationIcon = 'heroicon-o-shopping-bag';
-    protected static ?string $navigationGroup = 'Produk';
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-shopping-bag';
+    protected static string | \UnitEnum | null $navigationGroup = 'Produk';
 
     public static function form(Schema $schema): Schema
     {
@@ -119,7 +119,7 @@ class ProductResource extends Resource
                 Tables\Columns\IconColumn::make('is_prescription_required')->boolean(),
             ])
             ->filters([ Tables\Filters\TrashedFilter::make() ])
-            ->actions([ Tables\Actions\EditAction::make(), Tables\Actions\DeleteAction::make() ])
+            ->actions([ \Filament\Actions\EditAction::make(), \Filament\Actions\DeleteAction::make() ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\BulkAction::make('setAsBestSeller')
