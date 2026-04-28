@@ -12,7 +12,6 @@ use Filament\Tables\Table;
 
 class AppSettingResource extends Resource
 {
-<<<<<<< HEAD
     protected static ?string $model = AppSetting::class;
     protected static ?string $navigationIcon = 'heroicon-o-cog-8-tooth';
     protected static ?string $navigationGroup = 'Sistem';
@@ -20,15 +19,6 @@ class AppSettingResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-=======
-    protected static ?string \$model = AppSetting::class;
-    protected static string | \BackedEnum | null \$navigationIcon = 'heroicon-o-cog-8-tooth';
-    protected static string | \UnitEnum | null \$navigationGroup = 'Sistem';
-
-    public static function form(Form \$form): Form
-    {
-        return \$form
->>>>>>> 822d7bb628b0f423247d84190be941c85dc0c471
             ->schema([
                 Forms\Components\TextInput::make('key')
                     ->required()

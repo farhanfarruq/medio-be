@@ -13,19 +13,13 @@ use Illuminate\Support\Str;
 
 class CategoryResource extends Resource
 {
-    protected static ?string \$model = Category::class;
-    protected static string | \BackedEnum | null \$navigationIcon = 'heroicon-o-tag';
-    protected static string | \UnitEnum | null \$navigationGroup = 'Produk';
+    protected static ?string $model = Category::class;
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-tag';
+    protected static string | \UnitEnum | null $navigationGroup = 'Produk';
 
-<<<<<<< HEAD
     public static function form(Form $form): Form
     {
         return $form
-=======
-    public static function form(Form \$form): Form
-    {
-        return \$form
->>>>>>> 822d7bb628b0f423247d84190be941c85dc0c471
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
