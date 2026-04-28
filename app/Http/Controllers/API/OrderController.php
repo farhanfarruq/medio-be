@@ -40,8 +40,18 @@ class OrderController extends Controller
         $items    = [];
         $subtotal = 0;
 
+        // Optimasi: Ambil semua produk sekaligus di luar loop (Mencegah N+1 Query)
+        $productIds = collect($request->items)->pluck('product_id')->unique();
+        $products = Product::whereIn('id', $productIds)->get()->keyBy('id');
+
         foreach ($request->items as $item) {
-            $product = Product::findOrFail($item['product_id']);
+            $product = $products->get($item['product_id']);
+            
+            if (!$product) {
+                return response()->json([
+                    'message' => 'Salah satu produk tidak ditemukan.',
+                ], 404);
+            }
             $isLinkedLens = isset($item['linked_item_index']);
 
             // Skip stock check for linked lens items (lensa selalu tersedia di toko optik)

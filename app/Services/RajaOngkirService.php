@@ -21,95 +21,105 @@ class RajaOngkirService
 
     public function getProvinces(): array
     {
-        $response = Http::withHeaders(["key" => $this->apiKey])->get(
-            $this->baseUrl . "/destination/province",
-        );
+        return \Illuminate\Support\Facades\Cache::remember('ro_provinces', 86400, function () {
+            $response = Http::withHeaders(["key" => $this->apiKey])->get(
+                $this->baseUrl . "/destination/province",
+            );
 
-        return $response->json("data", []);
+            return $response->json("data", []);
+        });
     }
 
     public function getCities(string $provinceId = ""): array
     {
-        if (!$provinceId) {
-            return Http::withHeaders(["key" => $this->apiKey])
-                ->get($this->baseUrl . "/destination/city")
-                ->json("data", []);
-        }
+        $cacheKey = "ro_cities_" . ($provinceId ?: 'all');
 
-        // Strategy 1: Use documented path-based endpoint
-        $response = Http::withHeaders(["key" => $this->apiKey])->get(
-            $this->baseUrl . "/destination/city/$provinceId",
-        );
-        $data = $response->json("data", []);
-        if (!empty($data)) {
-            return $data;
-        }
+        return \Illuminate\Support\Facades\Cache::remember($cacheKey, 86400, function () use ($provinceId) {
+            if (!$provinceId) {
+                return Http::withHeaders(["key" => $this->apiKey])
+                    ->get($this->baseUrl . "/destination/city")
+                    ->json("data", []);
+            }
 
-        // Strategy 2: Legacy query parameter fallbacks
-        $paramNames = ["province_id", "id_province", "province", "id"];
-        foreach ($paramNames as $name) {
+            // Strategy 1: Use documented path-based endpoint
             $response = Http::withHeaders(["key" => $this->apiKey])->get(
-                $this->baseUrl . "/destination/city",
-                [$name => $provinceId],
+                $this->baseUrl . "/destination/city/$provinceId",
             );
             $data = $response->json("data", []);
             if (!empty($data)) {
                 return $data;
             }
-        }
 
-        // Strategy 3: Legacy alternative path fallback
-        $response = Http::withHeaders(["key" => $this->apiKey])->get(
-            $this->baseUrl . "/destination/city/province/$provinceId",
-        );
-        $data = $response->json("data", []);
-        if (!empty($data)) {
-            return $data;
-        }
+            // Strategy 2: Legacy query parameter fallbacks
+            $paramNames = ["province_id", "id_province", "province", "id"];
+            foreach ($paramNames as $name) {
+                $response = Http::withHeaders(["key" => $this->apiKey])->get(
+                    $this->baseUrl . "/destination/city",
+                    [$name => $provinceId],
+                );
+                $data = $response->json("data", []);
+                if (!empty($data)) {
+                    return $data;
+                }
+            }
 
-        return [];
+            // Strategy 3: Legacy alternative path fallback
+            $response = Http::withHeaders(["key" => $this->apiKey])->get(
+                $this->baseUrl . "/destination/city/province/$provinceId",
+            );
+            $data = $response->json("data", []);
+            if (!empty($data)) {
+                return $data;
+            }
+
+            return [];
+        });
     }
 
     public function getDistricts(string $cityId = ""): array
     {
-        if (!$cityId) {
-            return Http::withHeaders(["key" => $this->apiKey])
-                ->get($this->baseUrl . "/destination/district")
-                ->json("data", []);
-        }
+        $cacheKey = "ro_districts_" . ($cityId ?: 'all');
 
-        // Strategy 1: Use documented path-based endpoint
-        $response = Http::withHeaders(["key" => $this->apiKey])->get(
-            $this->baseUrl . "/destination/district/$cityId",
-        );
-        $data = $response->json("data", []);
-        if (!empty($data)) {
-            return $data;
-        }
+        return \Illuminate\Support\Facades\Cache::remember($cacheKey, 86400, function () use ($cityId) {
+            if (!$cityId) {
+                return Http::withHeaders(["key" => $this->apiKey])
+                    ->get($this->baseUrl . "/destination/district")
+                    ->json("data", []);
+            }
 
-        // Strategy 2: Legacy query parameter fallbacks
-        $paramNames = ["city_id", "id_city", "city", "id"];
-        foreach ($paramNames as $name) {
+            // Strategy 1: Use documented path-based endpoint
             $response = Http::withHeaders(["key" => $this->apiKey])->get(
-                $this->baseUrl . "/destination/district",
-                [$name => $cityId],
+                $this->baseUrl . "/destination/district/$cityId",
             );
             $data = $response->json("data", []);
             if (!empty($data)) {
                 return $data;
             }
-        }
 
-        // Strategy 3: Legacy alternative path fallback
-        $response = Http::withHeaders(["key" => $this->apiKey])->get(
-            $this->baseUrl . "/destination/district/city/$cityId",
-        );
-        $data = $response->json("data", []);
-        if (!empty($data)) {
-            return $data;
-        }
+            // Strategy 2: Legacy query parameter fallbacks
+            $paramNames = ["city_id", "id_city", "city", "id"];
+            foreach ($paramNames as $name) {
+                $response = Http::withHeaders(["key" => $this->apiKey])->get(
+                    $this->baseUrl . "/destination/district",
+                    [$name => $cityId],
+                );
+                $data = $response->json("data", []);
+                if (!empty($data)) {
+                    return $data;
+                }
+            }
 
-        return [];
+            // Strategy 3: Legacy alternative path fallback
+            $response = Http::withHeaders(["key" => $this->apiKey])->get(
+                $this->baseUrl . "/destination/district/city/$cityId",
+            );
+            $data = $response->json("data", []);
+            if (!empty($data)) {
+                return $data;
+            }
+
+            return [];
+        });
     }
 
     public function calculateAllCouriers(

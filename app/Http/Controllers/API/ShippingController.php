@@ -77,6 +77,23 @@ class ShippingController extends Controller
             ]);
         }
 
+        // Cek apakah alamat identik sudah ada untuk user ini
+        $existingAddress = ShippingAddress::where("user_id", $request->user()->id)
+            ->where("recipient_name", $validated["recipient_name"])
+            ->where("phone", $validated["phone"])
+            ->where("province_id", (string) $validated["province_id"])
+            ->where("city_id", (string) $validated["city_id"])
+            ->where("district_id", (string) $validated["district_id"])
+            ->where("address", $validated["address"])
+            ->first();
+
+        if ($existingAddress) {
+            if (isset($validated["is_default"])) {
+                $existingAddress->update(["is_default" => $validated["is_default"]]);
+            }
+            return response()->json($existingAddress);
+        }
+
         $address = ShippingAddress::create([
             ...$validated,
             "province_id" => (string) $validated["province_id"],
