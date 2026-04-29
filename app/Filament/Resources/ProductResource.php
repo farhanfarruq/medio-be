@@ -97,7 +97,6 @@ class ProductResource extends Resource
                     ->directory('products')
                     ->columnSpanFull()
                     ->dehydrated(fn ($state) => filled($state))
-                    ->helperText('Jika gambar tidak muncul di sini, itu karena gambar tersebut masih berupa link eksternal. Tenang saja, gambar tidak akan hilang saat Anda menyimpan detail produk lainnya.'),
             ]);
     }
 

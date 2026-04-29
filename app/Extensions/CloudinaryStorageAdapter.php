@@ -36,9 +36,12 @@ class CloudinaryStorageAdapter implements FlysystemAdapterInterface
         $tempFile = tempnam(sys_get_temp_dir(), 'cloudinary');
         file_put_contents($tempFile, $contents);
         
+        // Simpan dengan public_id yang menyertakan folder dan nama file
+        $publicId = pathinfo($path, PATHINFO_DIRNAME) . '/' . pathinfo($path, PATHINFO_FILENAME);
+        $publicId = ltrim($publicId, './');
+
         $this->cloudinary->uploadApi()->upload($tempFile, [
-            'public_id' => pathinfo($path, PATHINFO_FILENAME),
-            'folder' => dirname($path),
+            'public_id' => $publicId,
             'resource_type' => 'auto',
         ]);
         
@@ -117,13 +120,10 @@ class CloudinaryStorageAdapter implements FlysystemAdapterInterface
 
     public function getUrl(string $path): string
     {
-        // Cloudinary handles extensions automatically, but we should handle folders
-        $publicId = $path;
-        if (str_contains($path, '.')) {
-            $publicId = pathinfo($path, PATHINFO_DIRNAME) . '/' . pathinfo($path, PATHINFO_FILENAME);
-            $publicId = ltrim($publicId, './');
-        }
+        $publicId = pathinfo($path, PATHINFO_DIRNAME) . '/' . pathinfo($path, PATHINFO_FILENAME);
+        $publicId = ltrim($publicId, './');
         
-        return (string) $this->cloudinary->image($publicId)->toUrl();
+        // Paksa skema HTTPS
+        return (string) $this->cloudinary->image($publicId)->secure(true)->toUrl();
     }
 }
