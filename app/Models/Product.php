@@ -3,8 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Casts\Attribute;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -57,22 +55,5 @@ class Product extends Model
     public function orderItems(): HasMany
     {
         return $this->hasMany(OrderItem::class);
-    }
-
-    protected function images(): Attribute
-    {
-        return Attribute::make(
-            get: function ($value) {
-                if (!$value) return [];
-                
-                $images = is_array($value) ? $value : json_decode($value, true);
-                
-                return array_map(function ($image) {
-                    if (str_starts_with($image, 'http')) return $image;
-                    
-                    return Storage::disk(config('filesystems.default'))->url($image);
-                }, $images);
-            },
-        );
     }
 }
