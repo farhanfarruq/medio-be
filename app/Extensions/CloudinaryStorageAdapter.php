@@ -120,10 +120,14 @@ class CloudinaryStorageAdapter implements FlysystemAdapterInterface
 
     public function getUrl(string $path): string
     {
+        // Jika sudah full URL (misal sudah dari Cloudinary), kembalikan langsung
+        if (str_starts_with($path, 'http')) {
+            return $path;
+        }
+
         $publicId = pathinfo($path, PATHINFO_DIRNAME) . '/' . pathinfo($path, PATHINFO_FILENAME);
         $publicId = ltrim($publicId, './');
-        
-        // Paksa skema HTTPS
+
         return (string) $this->cloudinary->image($publicId)->secure(true)->toUrl();
     }
 }
