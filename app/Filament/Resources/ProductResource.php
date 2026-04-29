@@ -76,7 +76,7 @@ class ProductResource extends Resource
                         foreach ($images as $image) {
                             $url = str_starts_with($image, 'http') 
                                 ? $image 
-                                : \Illuminate\Support\Facades\Storage::disk('public')->url($image);
+                                : \Illuminate\Support\Facades\Storage::disk(config('filesystems.default'))->url($image);
                             
                             $html .= "
                                 <div style='position: relative;'>
@@ -92,7 +92,7 @@ class ProductResource extends Resource
                 Forms\Components\FileUpload::make('images')
                     ->multiple()
                     ->image()
-                    ->disk('public')
+                    ->disk(config('filesystems.default'))
                     ->visibility('public')
                     ->directory('products')
                     ->columnSpanFull()
@@ -109,7 +109,7 @@ class ProductResource extends Resource
                     ->label('Foto Produk')
                     ->circular()
                     ->stacked()
-                    ->disk('public'),
+                    ->disk(config('filesystems.default')),
                 Tables\Columns\TextColumn::make('name')->searchable(),
                 Tables\Columns\TextColumn::make('category.name')->sortable(),
                 Tables\Columns\TextColumn::make('price')->money('IDR')->sortable(),

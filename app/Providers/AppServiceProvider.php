@@ -7,6 +7,9 @@ use App\Repositories\Interfaces\ProductRepositoryInterface;
 use App\Repositories\OrderRepository;
 use App\Repositories\ProductRepository;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Storage;
+use League\Flysystem\Filesystem;
+use App\Extensions\CloudinaryStorageAdapter;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,6 +21,13 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        //
+        Storage::extend('cloudinary', function ($app, $config) {
+            $adapter = new CloudinaryStorageAdapter();
+            return new \Illuminate\Filesystem\FilesystemAdapter(
+                new Filesystem($adapter, $config),
+                $adapter,
+                $config
+            );
+        });
     }
 }
