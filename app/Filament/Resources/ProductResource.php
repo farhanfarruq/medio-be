@@ -107,18 +107,25 @@ class ProductResource extends Resource
                     ->columnSpanFull()
                     ->dehydrated(fn ($state) => filled($state))
                     ->saveUploadedFileUsing(function ($file) {
-                        $cloudinary = new Cloudinary(env('CLOUDINARY_URL'));
+                        try {
+                            $cloudinary = new Cloudinary(env('CLOUDINARY_URL'));
 
-                        $result = $cloudinary->uploadApi()->upload(
-                            $file->getRealPath(),
-                            [
-                                'folder'        => 'products',
-                                'resource_type' => 'auto',
-                            ]
-                        );
+                            $result = $cloudinary->uploadApi()->upload(
+                                $file->getRealPath(),
+                                [
+                                    'folder'        => 'products',
+                                    'resource_type' => 'auto',
+                                ]
+                            );
 
-                        // Kembalikan full HTTPS URL Cloudinary untuk disimpan ke DB
-                        return $result['secure_url'];
+                            // Kembalikan full HTTPS URL Cloudinary untuk disimpan ke DB
+                            return $result['secure_url'];
+                        } catch (\Throwable $e) {
+                            \Illuminate\Support\Facades\Log::error('Cloudinary upload failed: ' . $e->getMessage());
+                            throw \Illuminate\Validation\ValidationException::withMessages([
+                                'images' => 'Upload ke Cloudinary gagal: ' . $e->getMessage(),
+                            ]);
+                        }
                     })
                     ->helperText('Gambar yang diupload akan disimpan permanen ke Cloudinary.'),
             ]);
