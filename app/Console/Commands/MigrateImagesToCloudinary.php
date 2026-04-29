@@ -116,7 +116,7 @@ class MigrateImagesToCloudinary extends Command
 
             // Simpan ke database jika ada perubahan
             if ($changed && !$isDryRun) {
-                $product->withoutTimestamps()->update(['images' => $newImages]);
+                $product->withoutTimestamps(fn () => $product->update(['images' => $newImages]));
             }
 
             $bar->advance();
